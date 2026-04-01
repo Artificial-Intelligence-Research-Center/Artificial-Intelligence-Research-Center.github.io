@@ -898,18 +898,18 @@ const Team = ({ t, lang }) => {
   );
 };
 
-const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "Overall Technical Pipeline" }) => {
+const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "" }) => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">{lang === 'zh' ? '技術架構' : 'Technical Architecture'}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-4">{title || 'Overall Technical Pipeline'}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-4">{title}</h2>
         </div>
         <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8">
           <img 
             src={getImageUrl(src || "/assets/pipeline.png")} 
-            alt={title || "Overall Technical Pipeline"} 
+            alt={title || "Flowchart"} 
             className="w-full h-auto rounded-2xl"
             referrerPolicy="no-referrer"
             onError={(e) => {
@@ -917,7 +917,7 @@ const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "Overall Tec
             }}
           />
           <div className="mt-8 text-center text-slate-500 text-sm italic">
-            {lang === 'zh' ? '* 流程圖：Overall Technical Pipeline' : '* Flowchart: Overall Technical Pipeline'}
+            {lang === 'zh' ? '* 流程圖' : '* Flowchart'}
           </div>
         </div>
       </div>
@@ -930,10 +930,10 @@ const Partners = ({ t }) => {
   const partners = [
     { name: 'National Science and Technology Council', logo: '/assets/NSTC_Logo.png' },
     { name: 'Chang Gung University', logo: '/assets/CGU_Logo.svg' },
-    { name: 'Artificial Intelligence Research Center', logo: '/assets/logo-ai-res.png.png' },
-    { name: 'Taiwan AI Center of Excellence', logo: '/assets/logo-ai-coe.png.png' },
-    { name: 'College of Intelligent Computing', logo: '/assets/logo-ai-coc.png.jpeg' },
-    { name: 'Department of Artificial Intelligence', logo: '/assets/logo-ai-dai.png.png' },
+    { name: 'Artificial Intelligence Research Center', logo: '/assets/logo-ai-res.png' },
+    { name: 'Taiwan AI Center of Excellence', logo: '/assets/logo-ai-coe.png' },
+    { name: 'College of Intelligent Computing', logo: '/assets/logo-ai-coc.jpeg' },
+    { name: 'Department of Artificial Intelligence', logo: '/assets/logo-ai-dai.png' },
   ];
 
   const scroll = (direction: 'left' | 'right') => {
