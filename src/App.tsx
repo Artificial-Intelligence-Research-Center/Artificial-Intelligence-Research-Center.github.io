@@ -29,6 +29,21 @@ import {
 } from 'lucide-react';
 import teamData from './team.json';
 
+// Import all images from src/assets
+const images = import.meta.glob('./assets/*.{png,jpg,jpeg,svg,webp,avif}', { eager: true, query: '?url', import: 'default' });
+
+const getImageUrl = (path: string) => {
+  if (!path) return '';
+  // If path is already a full URL, return it
+  if (path.startsWith('http')) return path;
+  
+  // Convert absolute path like "/assets/img.png" to relative "./assets/img.png"
+  const relativePath = path.startsWith('/') ? '.' + path : path;
+  
+  // Return the resolved Vite URL, or fallback to the original path (encoded for Chinese characters)
+  return (images[relativePath] as string) || encodeURI(path);
+};
+
 // --- Translations ---
 
 const translations = {
@@ -321,7 +336,7 @@ const Navbar = ({ lang, setLang, t }) => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3 group">
           <img 
-            src="/assets/M4_Logo.png" 
+            src={getImageUrl("/assets/M4_Logo.png")} 
             alt="M4 Logo" 
             className="h-10 w-auto transition-transform group-hover:scale-105"
             referrerPolicy="no-referrer"
@@ -829,7 +844,7 @@ const Team = ({ t, lang }) => {
                 {/* Smaller, cleaner image */}
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-8 ring-8 ring-slate-50 group-hover:ring-blue-50 transition-all duration-500 shadow-xl">
                   <img 
-                    src={member.img} 
+                    src={getImageUrl(member.img)} 
                     alt={name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -893,7 +908,7 @@ const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "Overall Tec
         </div>
         <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8">
           <img 
-            src={src || "/assets/pipeline.png"} 
+            src={getImageUrl(src || "/assets/pipeline.png")} 
             alt={title || "Overall Technical Pipeline"} 
             className="w-full h-auto rounded-2xl"
             referrerPolicy="no-referrer"
@@ -915,10 +930,10 @@ const Partners = ({ t }) => {
   const partners = [
     { name: 'National Science and Technology Council', logo: '/assets/NSTC_Logo.png' },
     { name: 'Chang Gung University', logo: '/assets/CGU_Logo.svg' },
-    { name: 'Artificial Intelligence Research Center', logo: '/assets/AIC_Logo.png' },
-    { name: 'Taiwan AI Center of Excellence', logo: '/assets/AICOE.png' },
-    { name: 'College of Intelligent Computing', logo: '/assets/CIC_Logo.jpeg' },
-    { name: 'Department of Artificial Intelligence', logo: '/assets/DAI_Logo.png' },
+    { name: 'Artificial Intelligence Research Center', logo: '/assets/logo-ai-res.png.png' },
+    { name: 'Taiwan AI Center of Excellence', logo: '/assets/logo-ai-coe.png.png' },
+    { name: 'College of Intelligent Computing', logo: '/assets/logo-ai-coc.png.jpeg' },
+    { name: 'Department of Artificial Intelligence', logo: '/assets/logo-ai-dai.png.png' },
   ];
 
   const scroll = (direction: 'left' | 'right') => {
@@ -968,7 +983,7 @@ const Partners = ({ t }) => {
               <div className="h-24 flex items-center justify-center">
                 <div className="w-56 h-16 bg-slate-50 rounded-xl flex items-center justify-center border border-slate-100 shadow-sm overflow-hidden">
                    <img 
-                    src={partner.logo} 
+                    src={getImageUrl(partner.logo)} 
                     alt={partner.name} 
                     className="w-full h-full object-contain p-3"
                     referrerPolicy="no-referrer"
@@ -994,7 +1009,7 @@ const Footer = ({ t }) => {
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/assets/M4_Logo.png" 
+                src={getImageUrl("/assets/M4_Logo.png")} 
                 alt="M4 Logo" 
                 className="h-12 w-auto"
                 referrerPolicy="no-referrer"
