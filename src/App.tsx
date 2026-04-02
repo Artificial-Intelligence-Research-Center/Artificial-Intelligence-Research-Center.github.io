@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   ArrowRight,
@@ -1421,7 +1421,7 @@ export default function App() {
   const t = translations[lang];
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="min-h-screen bg-slate-50/50 font-sans selection:bg-blue-100 selection:text-blue-900">
         <Navbar lang={lang} setLang={setLang} t={t} />
@@ -1444,6 +1444,6 @@ export default function App() {
         <Partners t={t} />
         <Footer t={t} />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
