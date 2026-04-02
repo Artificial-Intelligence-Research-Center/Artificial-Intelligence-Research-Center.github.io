@@ -2,7 +2,7 @@
   {
     "name": "林桂傑",
     "nameEn": "Xiao-Ming Zhang",
-    "title": "計畫主持人、中心主任 、 前瞻技術組長 、教授",
+    "title": "計畫主持人",
     "titleEn": "Principal Investigator, Center Director, Advanced Technology Section Chief, Professor",
     "img": "/assets/林桂傑.jpg",
     "website": "https://faculty.sites.uci.edu/klin/",
@@ -13,7 +13,7 @@
   {
     "name": "王祐中",
     "nameEn": "Yu-Chung Wang",
-    "title": "中心副主任、系統資源暨資訊安全組長、教授",
+    "title": "共同主持人",
     "titleEn": "Deputy Director, System Resources and Information Security Section Chief, Professor",
     "img": "/assets/王祐中.jpg",
     "website": "https://www.cgu.edu.tw/ai/FullTimeProfessorManagement/Detail/d333ffe8-af47-4b45-b698-ed47dd851167?nodeId=17057",
@@ -24,7 +24,7 @@
   {
     "name": "張英風",
     "nameEn": "Ying-Feng Chang",
-    "title": "研究員",
+    "title": "團隊成員",
     "titleEn": "Researcher",
     "img": "/assets/張英風.jpg",
     "website": "https://www.cgu.edu.tw/aic/ContentSection?nodeId=13252",
@@ -35,7 +35,7 @@
   {
     "name": "林英嘉",
     "nameEn": "Ying-Jia Lin",
-    "title": "技術推廣組長 、助理教授",
+    "title": "團隊成員",
     "titleEn": "Technology Outreach Section Chief, Assistant Professor",
     "img": "/assets/林英嘉.avif",
     "website": "https://yingjialin.org/about/",
@@ -46,7 +46,7 @@
   {
     "name": "闕壯華",
     "nameEn": "Chuang-Hua Chueh",
-    "title": "研究員",
+    "title": "團隊成員",
     "titleEn": "Researcher",
     "img": "/assets/闕壯華.webp",
     "website": "https://example.com/meiling",
@@ -57,7 +57,7 @@
   {
     "name": "周福強",
     "nameEn": "Fu-Chiang Chou",
-    "title": "研究員",
+    "title": "團隊成員",
     "titleEn": "Researcher",
     "img": "/assets/周福強.jpg",
     "website": "https://www.cgu.edu.tw/ai/FullTimeProfessorManagement/Detail/e3cfc1b6-9017-42ef-b566-7eedd0aa62f2?nodeId=17061",
@@ -68,7 +68,7 @@
   {
     "name": "高嘉隆",
     "nameEn": "Chia-Lung Kao",
-    "title": "研究工程師",
+    "title": "團隊成員",
     "titleEn": "Research Engineer",
     "img": "/assets/高嘉隆.avif",
     "website": "https://cguaickao.github.io/my-personal-site/",
@@ -79,7 +79,7 @@
   {
     "name": "袁聖博",
     "nameEn": "Daniel Yuan",
-    "title": "臨床醫學研究所人工智慧組博士生、研究工程師",
+    "title": "團隊成員",
     "titleEn": "PhD Student, Research Engineer",
     "img": "/assets/袁聖博.avif",
     "website": "https://winterbelieve.github.io/",
@@ -90,7 +90,7 @@
   {
     "name": "陳冠宇",
     "nameEn": "Alfred",
-    "title": "研究工程師",
+    "title": "團隊成員",
     "titleEn": "Research Engineer",
     "img": "/assets/陳冠宇.avif",
     "website": "https://www.cgu.edu.tw/Uploads/upload/6846e7ce-2af5-483e-a012-dae6585ef5ab.png",
@@ -101,7 +101,7 @@
   {
     "name": "王柏鈞",
     "nameEn": "Bo-Jyun Wang",
-    "title": "研究工程師",
+    "title": "團隊成員",
     "titleEn": "Research Engineer",
     "img": "/assets/王柏鈞.avif",
     "website": "https://bojyunwang.me/",
@@ -112,7 +112,7 @@
   {
     "name": "劉建良",
     "nameEn": "Chien-Liang Liu",
-    "title": "研究工程師",
+    "title": "團隊成員",
     "titleEn": "Research Engineer",
     "img": "/assets/劉建良.avif",
     "website": "https://nail1021734.github.io/",
