@@ -687,7 +687,7 @@ const InfographicSection = ({ t }) => {
             如果您已經將圖片上傳到專案中，可以使用相對路徑。
           */}
           <img 
-            src="src/打破醫療 AI開發高牆.png" 
+            src="assets/打破醫療 AI開發高牆.png" 
             alt="M4 MEDCLAW Infographic" 
             className="w-full h-auto rounded-xl shadow-inner"
             referrerPolicy="no-referrer"
