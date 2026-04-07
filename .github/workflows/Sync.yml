@@ -10,6 +10,7 @@ jobs:
       - name: Checkout Destination Repo
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.SYNC_PAT }}
           fetch-depth: 0
 
       - name: Pull and Merge from Source
