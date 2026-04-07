@@ -66,6 +66,16 @@ const translations = {
       cta1: '了解更多計畫細節',
       cta2: '徵聘資訊',
     },
+    infographic: {
+      badge: '核心技術',
+      title: '技術亮點',
+      desc: '透過 M4 MEDCLAW 平台，我們希望打破醫療 AI 開發的高牆，讓各級醫院都能自主打造精準的醫療大模型。',
+      cards: [
+        { title: '技術亮點', desc: '強大的病灶特徵提取能力與無需專家即可適配的自動化微調技術。' },
+        { title: 'M4 MEDCLAW', desc: 'Agent 輔助之醫院自主醫療影像基礎模型微調平台。' },
+        { title: '產業應用性', desc: '自主資料專屬模型生成、臨床決策輔助與經濟效益提升。' }
+      ]
+    },
     about: {
       badge: '計畫內容',
       title: '計畫說明｜M4 模組化醫療視覺基礎模型計畫',
@@ -216,6 +226,16 @@ const translations = {
       desc: 'We are committed to solving the most pressing challenges through innovative technology and cross-disciplinary collaboration, creating long-term value and impact for society.',
       cta1: 'Learn More Details',
       cta2: 'Recruitment',
+    },
+    infographic: {
+      badge: 'Highlights',
+      title: 'Technical Highlights',
+      desc: 'Through the M4 MEDCLAW platform, we aim to break down the barriers of medical AI development, enabling hospitals to independently create precision medical foundation models.',
+      cards: [
+        { title: 'Technical Highlights', desc: 'Powerful lesion feature extraction and automated fine-tuning without expert intervention.' },
+        { title: 'M4 MEDCLAW', desc: 'Agent-assisted platform for autonomous medical imaging foundation model fine-tuning.' },
+        { title: 'Industrial Application', desc: 'Autonomous generation of proprietary models, clinical decision support, and economic efficiency.' }
+      ]
     },
     about: {
       badge: 'Project Detail',
@@ -601,7 +621,8 @@ const Hero = ({ t, lang }) => {
       <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block py-2 px-6 rounded-full bg-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest uppercase mb-4">
@@ -609,7 +630,7 @@ const Hero = ({ t, lang }) => {
           </span>
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-8 leading-tight">
             <span className="block mb-6">{t.hero.title}</span>
-            <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 py-4 px-2 leading-relaxed decoration-clone">
+            <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 py-4 px-2 leading-relaxed decoration-clone">
               {t.hero.subtitle}
             </span>
           </h1>
@@ -626,6 +647,63 @@ const Hero = ({ t, lang }) => {
             </Link>
           </div>
         </motion.div>
+      </div>
+    </section>
+  );
+};
+
+const InfographicSection = ({ t }) => {
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-4">
+              {t.infographic.badge}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
+              {t.infographic.title}
+            </h2>
+            <p className="max-w-4xl mx-auto text-lg text-slate-600 md:whitespace-nowrap">
+              {t.infographic.desc}
+            </p>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8"
+        >
+          {/* 
+            請將下方的 src 替換為您實際圖片的 URL。
+            如果您已經將圖片上傳到專案中，可以使用相對路徑。
+          */}
+          <img 
+            src="src/打破醫療 AI開發高牆.png" 
+            alt="M4 MEDCLAW Infographic" 
+            className="w-full h-auto rounded-xl shadow-inner"
+            referrerPolicy="no-referrer"
+          />
+          
+          <div className="absolute inset-0 pointer-events-none border-[12px] border-white/10 rounded-3xl"></div>
+        </motion.div>
+        
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {t.infographic.cards.map((card, i) => (
+            <div key={i} className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <h3 className="font-bold text-slate-900 mb-2">{card.title}</h3>
+              <p className="text-sm text-slate-600">{card.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -1430,6 +1508,7 @@ export default function App() {
             <Route path="/" element={
               <>
                 <Hero t={t} lang={lang} />
+                <InfographicSection t={t} />
               </>
             } />
             <Route path="/about" element={<About t={t} lang={lang} />} />
