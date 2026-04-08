@@ -684,7 +684,7 @@ const InfographicSection = ({ t }) => {
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
               {t.infographic.title}
             </h2>
-            <p className="max-w-4xl mx-auto text-lg text-slate-600 md:whitespace-nowrap">
+            <p className="max-w-3xl mx-auto text-lg text-slate-600">
               {t.infographic.desc}
             </p>
           </motion.div>
