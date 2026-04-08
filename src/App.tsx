@@ -164,8 +164,16 @@ const translations = {
           loc: '台北 華南銀行國際會議中心',
           desc: '第 17 屆亞洲機器學習會議 (ACML 2025) 旨在提供一個國際論壇，供研究人員討論機器學習領域的最新進展。',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
-          img: 'https://picsum.photos/seed/acml2025/800/600',
-          isUpcoming: false
+          img: 'assets/ACML2025.png',
+          isUpcoming: false,
+          gallery: [
+            'assets/acml2025_1.png', // 請替換為您的圖片檔名 1
+            'assets/acml2025_2.png', // 請替換為您的圖片檔名 2
+            'assets/acml2025_3.png', // 請替換為您的圖片檔名 3
+            'assets/acml2025_4.png', // 請替換為您的圖片檔名 4
+            'assets/acml2025_5.png', // 請替換為您的圖片檔名 5
+            'assets/acml2025_6.png'  // 請替換為您的圖片檔名 6
+          ]
         },
       ],
     },
@@ -327,7 +335,15 @@ const translations = {
           desc: 'The 17th Asian Conference on Machine Learning (ACML 2025) aims to provide an international forum for researchers to discuss the latest advances in machine learning.',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
           img: 'https://picsum.photos/seed/acml2025/800/600',
-          isUpcoming: false
+          isUpcoming: false,
+          gallery: [
+            'assets/acml2025_1.png', // Please replace with your image filename 1
+            'assets/acml2025_2.png', // Please replace with your image filename 2
+            'assets/acml2025_3.png', // Please replace with your image filename 3
+            'assets/acml2025_4.png', // Please replace with your image filename 4
+            'assets/acml2025_5.png', // Please replace with your image filename 5
+            'assets/acml2025_6.png'  // Please replace with your image filename 6
+          ]
         },
       ],
     },
@@ -1031,11 +1047,11 @@ const ConferenceItem = ({ event, t, lang }: { event: any, t: any, lang: any, key
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {/* Representative Image */}
-        <div className="w-full md:w-48 h-32 rounded-xl overflow-hidden shrink-0 shadow-inner bg-slate-50">
+        <div className="w-full md:w-48 h-32 rounded-xl overflow-hidden shrink-0 shadow-inner bg-slate-50 flex items-center justify-center group">
           <img
             src={getImageUrl(event.img)}
             alt={event.title}
-            className="w-full h-full object-cover"
+            className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
             referrerPolicy="no-referrer"
             onError={(e) => {
               (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${event.title}/400/300`;
@@ -1096,13 +1112,32 @@ const ConferenceItem = ({ event, t, lang }: { event: any, t: any, lang: any, key
               </div>
 
               {/* More images or details could go here */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <img
-                  src={getImageUrl(event.img)}
-                  alt="Detail 1"
-                  className="rounded-xl shadow-sm border border-white"
-                  referrerPolicy="no-referrer"
-                />
+              {/* Gallery Section */}
+              {event.gallery && event.gallery.length > 0 && (
+                <div className="mb-8">
+                  <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <Presentation size={18} className="text-blue-600" />
+                    {lang === 'zh' ? '會議剪影' : 'Conference Gallery'}
+                  </h4>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {event.gallery.map((imgUrl, idx) => (
+                      <div key={idx} className="aspect-video rounded-xl overflow-hidden shadow-sm border border-white bg-slate-100 group">
+                        <img
+                          src={getImageUrl(imgUrl)}
+                          alt={`Gallery ${idx + 1}`}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = `https://picsum.photos/seed/gallery-${idx}/400/300`;
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="mb-8">
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-center">
                   <h4 className="font-bold text-slate-900 mb-2">{lang === 'zh' ? '會議亮點' : 'Conference Highlights'}</h4>
                   <ul className="text-sm text-slate-600 space-y-2">
