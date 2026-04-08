@@ -1516,11 +1516,6 @@ const Footer = ({ t }) => {
             <span className="hidden md:inline text-slate-200">|</span>
             <p className="text-slate-400">{t.footer.updated}</p>
           </div>
-          <div className="flex gap-6">
-            {['Facebook', 'Twitter', 'LinkedIn', 'Instagram'].map(social => (
-              <a key={social} href="#" className="text-slate-400 hover:text-blue-600 transition-colors font-bold uppercase tracking-widest text-[10px]" title={t.footer.externalWarning}>{social}</a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>
