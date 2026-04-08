@@ -206,13 +206,13 @@ const translations = {
       quickLinks: '快速連結',
       legal: '法律資訊',
       p1: '隱私權政策',
-      p2: '服務條款',
-      p3: 'Cookie 設定',
+      // p2: '服務條款',
+      // p3: 'Cookie 設定',
       rights: '© 2026 M4計畫. 版權所有。',
       contact: '聯絡方式',
       address: '單位位置：長庚大學管理大樓11樓\n　　　　　人工智慧研究中心',
       phone: '聯絡電話：886-3-2118800 ext 3003#53',
-      email: '電子信箱：BettySu@cgu.edu.tw',
+      email: '電子信箱：buttysu@cgu.edu.tw',
       updated: '最後更新時間：2026-03-31',
       externalWarning: '點擊連結後將前往外部網站',
     },
@@ -1244,6 +1244,28 @@ const Privacy = ({ t, lang }) => {
           {lang === 'zh' ? '閱讀完整政策文件' : 'Read Full Policy Document'}
         </button>
       </div>
+      /*
+      隱私權保護政策 (Privacy Policy)
+      1. 資訊蒐集說明 (Information Collection)
+      本網站為純靜態之學術資訊展示網頁。我們不會透過任何表單、Cookie 或登入系統主動要求您輸入或蒐集您的個人識別資料（如姓名、電子郵件、電話等）。
+      This is a static academic website. We do not proactively collect any personally identifiable information (PII) such as names, emails, or phone numbers through forms, cookies, or login systems.
+      
+      2. 自動化紀錄說明 (Server Log Data)
+      當您瀏覽本網站時，託管伺服器可能會自動記錄您的基本連線資訊，包括但不限於 IP 地址、瀏覽器類型、造訪時間及所點選的網頁位址。這些資訊僅用於維護系統安全、異常排查以及網站流量統計，不會用於識別特定個人之身分。
+      When you visit, our hosting server may automatically record basic connection data, including IP addresses, browser types, and access timestamps. This data is used solely for system security, troubleshooting, and traffic analysis.
+      
+      3. 外部連結聲明 (External Links)
+      本網站可能包含通往其他第三方網站（如學術期刊、研究單位、社群媒體）的連結。對於這些外部網站的內容或其隱私權政策，本研究中心不負任何法律責任，建議您在離開本站時先行閱讀該網站的隱私權聲明。
+      Our website may contain links to third-party sites. We are not responsible for the content or privacy practices of these external websites. We encourage you to read the privacy statements of any site you visit.
+      
+      4. 政策修訂 (Changes to This Policy)
+      本研究中心保留隨時修改本隱私權政策的權利。任何修訂將於本頁面發佈後立即生效。
+      We reserve the right to update this policy at any time. Any changes will take effect immediately upon posting to this page.
+      
+      5. 聯絡我們 (Contact Us)
+      若您對本政策或本網站有任何疑問，歡迎透過網站下方提供的聯繫方式與我們聯繫。
+      If you have questions about this policy, please contact us via the information provided in the footer.
+      */
     </section>
   );
 };
