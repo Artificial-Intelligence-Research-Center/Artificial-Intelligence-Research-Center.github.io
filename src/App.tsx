@@ -334,7 +334,7 @@ const translations = {
           loc: 'HNBK International Convention Center, Taipei',
           desc: 'The 17th Asian Conference on Machine Learning (ACML 2025) aims to provide an international forum for researchers to discuss the latest advances in machine learning.',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
-          img: 'https://picsum.photos/seed/acml2025/800/600',
+          img: 'assets/ACML2025.png',
           isUpcoming: false,
           gallery: [
             'assets/acml2025_1.png', // Please replace with your image filename 1
