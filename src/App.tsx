@@ -70,6 +70,7 @@ const translations = {
       badge: '核心技術',
       title: '技術亮點',
       desc: '透過 M4 MEDCLAW 平台，我們希望打破醫療 AI 開發的高牆，讓各級醫院都能自主打造精準的醫療大模型。',
+      image: 'assets/打破醫療 AI開發高牆.png',
       cards: [
         { title: '技術亮點', desc: '強大的病灶特徵提取能力與無需專家即可適配的自動化微調技術。' },
         { title: 'M4 MEDCLAW', desc: 'Agent 輔助之醫院自主醫療影像基礎模型微調平台。' },
@@ -190,7 +191,7 @@ const translations = {
       title: '相關單位',
     },
     brand: {
-      name: '計畫',
+      name: 'M4計畫',
     },
     footer: {
       desc: '引領未來的創新計畫，致力於透過技術與合作創造社會價值。我們相信每一個小小的改變，都能匯聚成推動世界的巨大力量。',
@@ -231,6 +232,7 @@ const translations = {
       badge: 'Highlights',
       title: 'Technical Highlights',
       desc: 'Through the M4 MEDCLAW platform, we aim to break down the barriers of medical AI development, enabling hospitals to independently create precision medical foundation models.',
+      image: 'assets/Technical Highlights.png', // 請將此處替換為您的英文版圖片檔名
       cards: [
         { title: 'Technical Highlights', desc: 'Powerful lesion feature extraction and automated fine-tuning without expert intervention.' },
         { title: 'M4 MEDCLAW', desc: 'Agent-assisted platform for autonomous medical imaging foundation model fine-tuning.' },
@@ -351,7 +353,7 @@ const translations = {
       title: 'Related Organizations',
     },
     brand: {
-      name: 'Project',
+      name: 'M4 Project',
     },
     footer: {
       desc: 'Leading the future innovation project, committed to creating social value through technology and collaboration.',
@@ -446,16 +448,14 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: any[] = [
     {
       name: t.nav.about,
       href: '/about',
-      subItems: t.about.sections.map(s => ({ name: s.title, href: '/about' }))
     },
     {
       name: t.nav.team,
       href: '/team',
-      subItems: [{ name: t.team.title, href: '/team' }]
     },
     {
       name: t.nav.recruitment,
@@ -472,7 +472,6 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
     {
       name: t.nav.conferences,
       href: '/conferences',
-      subItems: t.conferences.events.map(e => ({ name: e.title, href: '/conferences' }))
     },
     {
       name: t.nav.privacy,
@@ -683,11 +682,12 @@ const InfographicSection = ({ t }) => {
           className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8"
         >
           {/* 
-            請將下方的 src 替換為您實際圖片的 URL。
-            如果您已經將圖片上傳到專案中，可以使用相對路徑。
+            圖片路徑已根據語言自動切換：
+            - 中文版：assets/打破醫療 AI開發高牆.png
+            - 英文版：assets/Breaking_Medical_AI_Barriers.png (請確保檔案名稱一致)
           */}
           <img 
-            src="assets/打破醫療 AI開發高牆.png" 
+            src={getImageUrl(t.infographic.image)} 
             alt="M4 MEDCLAW Infographic" 
             className="w-full h-auto rounded-xl shadow-inner"
             referrerPolicy="no-referrer"
