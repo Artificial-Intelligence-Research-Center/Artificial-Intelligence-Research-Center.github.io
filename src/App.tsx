@@ -212,7 +212,7 @@ const translations = {
       contact: '聯絡方式',
       address: '單位位置：長庚大學管理大樓11樓\n　　　　　人工智慧研究中心',
       phone: '聯絡電話：886-3-2118800 ext 3003#53',
-      email: '電子信箱：buttysu@cgu.edu.tw',
+      email: '電子信箱：bettysu@cgu.edu.tw',
       updated: '最後更新時間：2026-04-09',
       externalWarning: '點擊連結後將前往外部網站',
     },
