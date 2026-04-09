@@ -1244,6 +1244,9 @@ const Privacy = ({ t, lang }) => {
           {lang === 'zh' ? '閱讀完整政策文件' : 'Read Full Policy Document'}
         </button>
       </div>
+    </section>
+  );
+};
       /*
       隱私權保護政策 (Privacy Policy)
       1. 資訊蒐集說明 (Information Collection)
@@ -1266,9 +1269,6 @@ const Privacy = ({ t, lang }) => {
       若您對本政策或本網站有任何疑問，歡迎透過網站下方提供的聯繫方式與我們聯繫。
       If you have questions about this policy, please contact us via the information provided in the footer.
       */
-    </section>
-  );
-};
 
 const Team = ({ t, lang }) => {
   return (
