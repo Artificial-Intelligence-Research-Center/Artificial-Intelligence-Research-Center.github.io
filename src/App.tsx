@@ -380,7 +380,7 @@ const translations = {
       // p3: 'Cookie Settings',
       rights: '© 2026 M4 Project. All rights reserved.',
       contact: 'Contact Info',
-      address: 'Address: 11F, Management Building, Chang Gung University,\n         AI Research Center',
+      address: 'Address: 11F, Management Building, Chang Gung University,AI Research Center',
       phone: 'Phone: 886-3-2118800 ext 3003#53',
       email: 'Email: bettysu@cgu.edu.tw',
       updated: 'Last Updated: 2026-04-09',
