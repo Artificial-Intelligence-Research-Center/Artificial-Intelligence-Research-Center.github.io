@@ -25,7 +25,7 @@ jobs:
           git fetch source_repo
           
           # 3. 將來源的 main 分支合併進來 (或是直接覆蓋)
-          git merge source_repo/main --allow-unrelated-histories
+          git merge source_repo/main --allow-unrelated-histories -X theirs -m "Auto-merge from source (preferring source on conflicts)"
           
           # 4. 推送回自己的 Repo
           git push origin main
