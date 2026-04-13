@@ -181,6 +181,7 @@ const translations = {
       badge: '隱私權政策',
       title: '您的隱私對我們至關重要',
       desc: '本計畫致力於保護您的個人資料。我們僅在必要時收集資訊，並確保其安全性。',
+      fullPolicy: '長庚大學 M4 計畫 （M4 Project）網站隱私權政策\n歡迎訪問長庚大學人工智慧研究中心 M4 計畫官方網站（以下簡稱「本網站」）。本計畫由長庚大學人工智慧研究中心相關研究單位共同執行（以下簡稱「本計畫團隊」）。為了保障您的隱私權及協助您瞭解本網站如何蒐集、處理及利用您的個人資料，請詳閱以下政策說明：\n\n一、政策適用範圍\n本政策適用於您在瀏覽本網站、使用本網站線上服務、或參與本計畫相關線上活動時所涉及的個人資料。本政策不適用於本網站所連結之第三方網站，亦不適用於非本計畫團隊所聘僱或管理之人員。\n\n二、個人資料之蒐集方式與目的\n網站瀏覽紀錄： 當您瀏覽本網站時，伺服器會自動產生相關日誌 （Log），包括您的 IP 位址、使用時間、瀏覽器類型及點選紀錄。這些資料主要用於本計畫之網站流量分析與系統改進，不會與特定個人進行比對。\n\n聯絡與諮詢： 若您透過網站表單或電子郵件與本計畫聯繫，我們將蒐集您的姓名、電子郵件及通訊內容，僅用於回覆您的詢問或提供計畫相關資訊。\n\n計畫特定數據處理： * M4 計畫涉及之醫療影像、臨床數據或 AI 模型訓練資料，均嚴格遵守人體試驗委員會 （IRB）之規範。\n\n本網站展示之所有研究數據與影像均經過去識別化（De-identification）處理，確保無法識別特定自然人。\n\n三、資料保護與安全措施\n本網站主機設有防火牆、防毒系統及各項資訊安全防護措施，以確保您的資料與本計畫研究數據的安全。\n\n僅限本計畫授權之核心研究人員能接觸相關資料，所有人員均簽署保密協議，如有違規將負相關法律及行政責任。\n\n四、與第三人共用資料之規範\n本計畫團隊絕不會向其他個人、團體或私人企業提供、交換或出售您的個人資料。但以下情形除外：\n\n經由您書面同意或主動授權。\n\n配合司法機關或監管機構依法進行之調查。\n\n為學術研究之目的，且資料已處理至無法辨識特定當事人（符合個資法第 6 條及第 15 條之學術例外規定）。\n\n五、Cookie 之技術運用\n本網站會使用 Cookie 技術以提供更便捷的瀏覽體驗。您可以透過瀏覽器設定拒絕 Cookie 的存取，但這可能導致網站部分功能無法正常運作。\n\n六、計畫參與者之權利\n依據台灣《個人資料保護法》，您針對本計畫所蒐集之您的個資，享有查詢、閱覽、製給複製本、補充、更正、停止蒐集處理利用或要求刪除之權利。若有相關需求，請透過本計畫官方聯絡管道與我們聯繫。\n\n七、隱私權政策之修正\n因應法令變動或本計畫發展需求，本隱私權政策將不定期修訂，修訂後之條款將立即公告於本網站，不另行個別通知。\n\n八、聯繫我們\n若您對 M4 計畫的隱私權政策或資料處理有任何疑問，請聯繫：\n\n計畫名稱： 長庚大學 人工智慧研究中心 M4 計畫 （M4 Project）\n\n執行單位： 長庚大學 人工智慧研究中心\n\n官方網址： https://m4.cgu.edu.tw/'
     },
     timeline: {
       badge: '執行進度',
@@ -206,14 +207,12 @@ const translations = {
       quickLinks: '快速連結',
       legal: '法律資訊',
       p1: '隱私權政策',
-      p2: '服務條款',
-      p3: 'Cookie 設定',
-      rights: '© 2026 M4計畫. 版權所有。',
+      rights: '© 2026 長庚大學人工智慧研究中心. 版權所有。',
       contact: '聯絡方式',
       address: '單位位置：長庚大學管理大樓11樓\n　　　　　人工智慧研究中心',
       phone: '聯絡電話：886-3-2118800 ext 3003#53',
       email: '電子信箱：BettySu@cgu.edu.tw',
-      updated: '最後更新時間：2026-03-31',
+      updated: '最後更新時間：2026-04-10',
       externalWarning: '點擊連結後將前往外部網站',
     },
   },
@@ -351,6 +350,7 @@ const translations = {
       badge: 'Privacy Policy',
       title: 'Your Privacy Matters',
       desc: 'We are committed to protecting your personal data. We only collect information when necessary.',
+      fullPolicy: 'Chang Gung University M4 Project Website Privacy Policy\nWelcome to the official website of the M4 Project of the Artificial Intelligence Research Center, Chang Gung University (hereinafter referred to as "this website"). This project is jointly executed by relevant research units of the Artificial Intelligence Research Center, Chang Gung University (hereinafter referred to as "the project team"). To protect your privacy and help you understand how this website collects, processes, and utilizes your personal data, please read the following policy description carefully:\n\nI. Scope of Policy Application\nThis policy applies to the personal data involved when you browse this website, use online services of this website, or participate in online activities related to this project. This policy does not apply to third-party websites linked to this website, nor does it apply to personnel not employed or managed by the project team.\n\nII. Methods and Purposes of Personal Data Collection\nWebsite Browsing Records: When you browse this website, the server automatically generates relevant logs (Log), including your IP address, usage time, browser type, and click records. These data are mainly used for website traffic analysis and system improvement of this project and will not be compared with specific individuals.\n\nContact and Consultation: If you contact the project through website forms or emails, we will collect your name, email, and communication content, which will only be used to respond to your inquiries or provide project-related information.\n\nProject-Specific Data Processing: * The medical images, clinical data, or AI model training data involved in the M4 project strictly comply with the regulations of the Institutional Review Board (IRB).\n\nAll research data and images displayed on this website have undergone de-identification (De-identification) processing to ensure that specific natural persons cannot be identified.\n\nIII. Data Protection and Security Measures\nThis website host is equipped with firewalls, anti-virus systems, and various information security protection measures to ensure the security of your data and the research data of this project.\n\nOnly core researchers authorized by this project can access relevant data. All personnel have signed confidentiality agreements and will bear relevant legal and administrative responsibilities in case of violations.\n\nIV. Regulations on Sharing Data with Third Parties\nThe project team will never provide, exchange, or sell your personal data to other individuals, groups, or private enterprises. Except for the following cases:\n\nWith your written consent or active authorization.\n\nCooperating with investigations conducted by judicial or regulatory agencies according to law.\n\nFor academic research purposes, and the data has been processed to the extent that specific parties cannot be identified (complying with the academic exception provisions of Articles 6 and 15 of the Personal Data Protection Act).\n\nV. Technical Application of Cookies\nThis website uses Cookie technology to provide a more convenient browsing experience. You can refuse access to Cookies through browser settings, but this may cause some functions of the website to not work properly.\n\nVI. Rights of Project Participants\nAccording to the Taiwan "Personal Data Protection Act", you have the rights to inquire, review, request copies, supplement, correct, stop collection, processing, utilization, or request deletion of your personal data collected for this project. If you have relevant needs, please contact us through the official contact channels of this project.\n\nVII. Revision of Privacy Policy\nIn response to changes in laws or project development needs, this privacy policy will be revised from time to time. The revised terms will be announced immediately on this website without individual notice.\n\nVIII. Contact Us\nIf you have any questions about the privacy policy or data processing of the M4 Project, please contact:\n\nProject Name: Chang Gung University Artificial Intelligence Research Center M4 Project (M4 Project)\n\nExecuting Unit: Chang Gung University Artificial Intelligence Research Center\n\nOfficial Website: https://m4.cgu.edu.tw/'
     },
     timeline: {
       badge: 'Progress',
@@ -376,14 +376,12 @@ const translations = {
       quickLinks: 'Quick Links',
       legal: 'Legal',
       p1: 'Privacy Policy',
-      p2: 'Terms of Service',
-      p3: 'Cookie Settings',
-      rights: '© 2026 M4 Project. All rights reserved.',
+      rights: '© 2026 Artificial Intelligence Research Center, Chang Gung University. All rights reserved.',
       contact: 'Contact Info',
       address: 'Address: 11F, Management Building, Chang Gung University,\n         AI Research Center',
       phone: 'Phone: 886-3-2118800 ext 3003#53',
       email: 'Email: BettySu@cgu.edu.tw',
-      updated: 'Last Updated: 2026-03-27',
+      updated: 'Last Updated: 2026-04-10',
       externalWarning: 'Clicking the link will take you to an external website',
     },
   },
@@ -1229,6 +1227,8 @@ const Conferences = ({ t, lang }) => {
 };
 
 const Privacy = ({ t, lang }) => {
+  const [showFull, setShowFull] = useState(false);
+
   return (
     <section id="privacy" className="pt-32 pb-20 bg-slate-50/50 min-h-screen">
       <div className="max-w-3xl mx-auto px-6 text-center">
@@ -1240,9 +1240,33 @@ const Privacy = ({ t, lang }) => {
         <p className="text-lg text-slate-600 leading-relaxed">
           {t.privacy.desc}
         </p>
-        <button className="mt-10 text-blue-600 font-bold underline underline-offset-8">
-          {lang === 'zh' ? '閱讀完整政策文件' : 'Read Full Policy Document'}
-        </button>
+        
+        {!showFull ? (
+          <button 
+            onClick={() => setShowFull(true)}
+            className="mt-10 text-blue-600 font-bold underline underline-offset-8 hover:text-blue-700 transition-colors"
+          >
+            {lang === 'zh' ? '閱讀完整政策文件' : 'Read Full Policy Document'}
+          </button>
+        ) : (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-12 text-left bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-slate-100"
+          >
+            <div className="prose prose-slate max-w-none">
+              <pre className="whitespace-pre-wrap font-sans text-slate-600 leading-relaxed text-base">
+                {t.privacy.fullPolicy}
+              </pre>
+            </div>
+            <button 
+              onClick={() => setShowFull(false)}
+              className="mt-12 text-slate-400 font-bold text-sm hover:text-slate-600 transition-colors"
+            >
+              {lang === 'zh' ? '收合文件' : 'Collapse Document'}
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
@@ -1482,8 +1506,6 @@ const Footer = ({ t }) => {
             <h4 className="text-slate-900 font-bold mb-4 text-base uppercase tracking-wider">{t.footer.legal}</h4>
             <ul className="space-y-4 text-sm">
               <li><Link to="/privacy" className="hover:text-blue-600 transition-colors">{t.footer.p1}</Link></li>
-              <li><a href="#" className="hover:text-blue-600 transition-colors">{t.footer.p2}</a></li>
-              <li><a href="#" className="hover:text-blue-600 transition-colors">{t.footer.p3}</a></li>
             </ul>
           </div>
           <div className="md:col-span-4">
@@ -1510,16 +1532,11 @@ const Footer = ({ t }) => {
             </ul>
           </div>
         </div>
-        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-medium">
-          <div className="flex flex-col md:flex-row gap-4 items-center">
+        <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-start items-start md:items-center gap-6 text-xs font-medium">
+          <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
             <p className="text-slate-500">{t.footer.rights}</p>
             <span className="hidden md:inline text-slate-200">|</span>
             <p className="text-slate-400">{t.footer.updated}</p>
-          </div>
-          <div className="flex gap-6">
-            {['Facebook', 'Twitter', 'LinkedIn', 'Instagram'].map(social => (
-              <a key={social} href="#" className="text-slate-400 hover:text-blue-600 transition-colors font-bold uppercase tracking-widest text-[10px]" title={t.footer.externalWarning}>{social}</a>
-            ))}
           </div>
         </div>
       </div>
