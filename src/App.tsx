@@ -150,20 +150,20 @@ const translations = {
           url: 'https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f'
         },
         {
-          date: '2024/01/19',
-          title: '生成式 AI 正如何在全球各醫療場域，提升醫護工作效率與照護品質？',
-          author: '黃怡婷 科技大觀園特約編輯',
-          source: '科技大觀園',
-          desc: '生成式 AI 正在提升醫療工作效能 生成式 AI 應用在醫療領域的重要前提',
-          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
-        },
-        {
           date: '2024/03/15',
           title: '智慧醫材結合AI應用新趨勢',
           author: '撰文／羅倩宜',
           source: '工業技術與資訊月刊',
           desc: '高階醫療從醫院走向鄰近病患的定點醫療 生成式AI開始在醫療應用萌芽',
           url: 'https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1253016311517010576'
+        },
+        {
+          date: '2024/01/19',
+          title: '生成式 AI 正如何在全球各醫療場域，提升醫護工作效率與照護品質？',
+          author: '黃怡婷 科技大觀園特約編輯',
+          source: '科技大觀園',
+          desc: '生成式 AI 正在提升醫療工作效能 生成式 AI 應用在醫療領域的重要前提',
+          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
         },
         {
           date: '2023/08/04',
@@ -352,6 +352,14 @@ const translations = {
           url: 'https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f'
         },
         {
+          date: '2024/03/15',
+          title: 'New Trends in Smart Medical Devices with AI Applications',
+          author: 'Written by Chien-Yi Lo',
+          source: 'Industrial Technology & Information Monthly',
+          desc: 'High-end medical care moves from hospitals to point-of-care near patients. Generative AI begins to sprout in medical applications.',
+          url: 'https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1253016311517010576'
+        },
+        {
           date: '2024/01/19',
           title: 'How Generative AI Improves Healthcare Efficiency and Quality?',
           author: 'Yi-Ting Huang, Sci-Tech Vista Special Editor',
@@ -360,20 +368,12 @@ const translations = {
           url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
         },
         {
-          date: '2024/10/22',
-          title: 'Ethics and Challenges of Medical AI: Data Privacy and Algorithmic Bias',
-          author: 'Xiao-Ya Chen, Sci-Tech Vista Special Author',
-          source: 'Sci-Tech Vista',
-          desc: 'Exploring how to ensure patient privacy and build trustworthy AI systems while promoting medical AI development.',
-          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=88888888-8888-8888-8888-888888888888'
-        },
-        {
-          date: '2024/07/30',
-          title: 'AI-Assisted Drug Discovery: Shortening the Long Road to New Medicines',
-          author: 'ITRI Industrial Intelligence',
-          source: 'ITRI',
-          desc: 'Using machine learning to screen drug candidates, significantly reducing R&D costs and failure risks.',
-          url: 'https://college.itri.org.tw/Info/InfoData/drug-discovery-ai'
+          date: '2023/08/04',
+          title: 'AI Helps Breast Cancer Screening, Halving Doctors\' Workload',
+          author: 'Hannah',
+          source: 'AI Post',
+          desc: 'Improving screening efficiency and solving the shortage of radiologists.',
+          url: 'https://reurl.cc/mpMkXG'
         }
       ]
     },
