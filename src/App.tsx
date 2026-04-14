@@ -156,6 +156,22 @@ const translations = {
           source: '科技大觀園',
           desc: '生成式 AI 正在提升醫療工作效能 生成式 AI 應用在醫療領域的重要前提',
           url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
+        },
+        {
+          date: '2024/03/15',
+          title: '智慧醫材結合AI應用新趨勢',
+          author: '撰文／羅倩宜',
+          source: '工業技術與資訊月刊',
+          desc: '高階醫療從醫院走向鄰近病患的定點醫療 生成式AI開始在醫療應用萌芽',
+          url: 'https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1253016311517010576'
+        },
+        {
+          date: '2023/08/04',
+          title: 'AI幫助乳房癌症攝影篩檢，助醫師工作量減半',
+          author: 'Hannah',
+          source: 'AI郵報',
+          desc: '改善篩檢效率並解決放射科醫師短缺等問題',
+          url: 'https://reurl.cc/mpMkXG'
         }
       ]
     },
@@ -342,6 +358,22 @@ const translations = {
           source: 'Sci-Tech Vista',
           desc: 'Generative AI is improving medical work efficiency. Important prerequisites for applying generative AI in the medical field.',
           url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
+        },
+        {
+          date: '2024/10/22',
+          title: 'Ethics and Challenges of Medical AI: Data Privacy and Algorithmic Bias',
+          author: 'Xiao-Ya Chen, Sci-Tech Vista Special Author',
+          source: 'Sci-Tech Vista',
+          desc: 'Exploring how to ensure patient privacy and build trustworthy AI systems while promoting medical AI development.',
+          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=88888888-8888-8888-8888-888888888888'
+        },
+        {
+          date: '2024/07/30',
+          title: 'AI-Assisted Drug Discovery: Shortening the Long Road to New Medicines',
+          author: 'ITRI Industrial Intelligence',
+          source: 'ITRI',
+          desc: 'Using machine learning to screen drug candidates, significantly reducing R&D costs and failure risks.',
+          url: 'https://college.itri.org.tw/Info/InfoData/drug-discovery-ai'
         }
       ]
     },
