@@ -25,7 +25,8 @@ import {
   Briefcase,
   Newspaper,
   Presentation,
-  Lock
+  Lock,
+  ExternalLink
 } from 'lucide-react';
 import teamData from './team.json';
 
@@ -53,7 +54,7 @@ const translations = {
       team: '團隊介紹',
       recruitment: '徵聘資訊',
       news: '活動訊息',
-      science: '科學新知',
+      science: '人工智慧｜醫療應用',
       conferences: '學術會議',
       privacy: '隱私權政策',
       join: '計畫詳情',
@@ -132,14 +133,31 @@ const translations = {
     },
     news: {
       badge: '活動訊息',
-      title: '計畫最新消息',
+      title: '最新消息',
       items: [],
     },
     science: {
-      badge: '科學新知',
-      title: '醫療 AI 科學新知',
-      desc: '分享全球醫療人工智慧領域的最新研究成果與技術趨勢。',
-      items: []
+      badge: '人工智慧｜醫療應用',
+      title: '人工智慧技術於醫療之研究、實作與未來',
+      desc: '探索全球醫療人工智慧領域的最新研究成果與技術趨勢。',
+      items: [
+        {
+          date: '2024/09/12',
+          title: 'AI病理診斷：從技術到臨床的革命性突破',
+          author: '口述／雲象科技創辦人暨執行長葉肇元　整理／賴宛靖',
+          source: '工研院產業學院',
+          desc: '利用AI奠定病理診斷新里程碑 當醫師的第二雙眼睛',
+          url: 'https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f'
+        },
+        {
+          date: '2024/01/19',
+          title: '生成式 AI 正如何在全球各醫療場域，提升醫護工作效率與照護品質？',
+          author: '黃怡婷 科技大觀園特約編輯',
+          source: '科技大觀園',
+          desc: '生成式 AI 正在提升醫療工作效能 生成式 AI 應用在醫療領域的重要前提',
+          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
+        }
+      ]
     },
     conferences: {
       badge: '學術會議',
@@ -222,7 +240,7 @@ const translations = {
       team: 'Team',
       recruitment: 'Recruitment',
       news: 'Activity News',
-      science: 'Science News',
+      science: 'AI | Medical Applications',
       conferences: 'Conferences',
       privacy: 'Privacy',
       join: 'Project Details',
@@ -305,10 +323,27 @@ const translations = {
       items: [],
     },
     science: {
-      badge: 'Science News',
-      title: 'Medical AI Science Insights',
-      desc: 'Sharing the latest research results and technical trends in the field of global medical AI.',
-      items: []
+      badge: 'AI | Medical Applications',
+      title: 'Research, Implementation, and Future of AI in Healthcare',
+      desc: 'Exploring the latest research results and technical trends in the field of global medical AI.',
+      items: [
+        {
+          date: '2024/09/12',
+          title: 'AI Pathology Diagnosis: A Revolutionary Breakthrough from Technology to Clinic',
+          author: 'Narrated by Chao-Yuan Yeh, Founder & CEO of aetherAI; Edited by Wan-Jing Lai',
+          source: 'ITRI College',
+          desc: 'Using AI to set a new milestone in pathological diagnosis as the second pair of eyes for doctors.',
+          url: 'https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f'
+        },
+        {
+          date: '2024/01/19',
+          title: 'How Generative AI Improves Healthcare Efficiency and Quality?',
+          author: 'Yi-Ting Huang, Sci-Tech Vista Special Editor',
+          source: 'Sci-Tech Vista',
+          desc: 'Generative AI is improving medical work efficiency. Important prerequisites for applying generative AI in the medical field.',
+          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
+        }
+      ]
     },
     conferences: {
       badge: 'Conferences',
@@ -986,7 +1021,7 @@ const News = ({ t }) => {
   );
 };
 
-const Science = ({ t }) => {
+const Science = ({ t, lang }) => {
   return (
     <section id="science" className="pt-32 pb-20 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
@@ -997,35 +1032,66 @@ const Science = ({ t }) => {
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="flex flex-col gap-8 max-w-5xl mx-auto">
           {t.science.items.length > 0 ? (
             t.science.items.map((item, i) => (
               <motion.div 
                 key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group"
+                className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group flex flex-col md:flex-row gap-8 items-start"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-lg shadow-blue-100">
-                    <Zap size={20} />
+                <div className="flex flex-col items-center md:items-start gap-3 shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-lg shadow-blue-100">
+                    <Zap size={24} />
                   </div>
-                  <span className="text-sm font-bold text-slate-400">{item.date}</span>
+                  <span className="text-sm font-bold text-slate-400 whitespace-nowrap">{item.date}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">{item.title}</h3>
-                <p className="text-slate-600 leading-relaxed mb-6">
-                  {item.desc}
-                </p>
-                <button className="flex items-center gap-2 text-blue-600 font-bold group-hover:gap-3 transition-all">
-                  {t.lang === 'zh' ? '閱讀更多' : 'Read More'} <ArrowRight size={18} />
-                </button>
+                
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h3>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-4 text-sm text-slate-500 italic">
+                    <div className="flex items-center gap-1">
+                      <span className="font-medium">{item.author}</span>
+                    </div>
+                    {item.source && (
+                      <div className="flex items-center gap-1">
+                        <span className="text-slate-300">|</span>
+                        <span>{lang === 'zh' ? '轉自：' : 'Source: '}</span>
+                        <span className="font-medium">{item.source}</span>
+                      </div>
+                    )}
+                  </div>
+                  <p className={`text-slate-600 leading-relaxed ${item.summary ? 'mb-6' : 'mb-4'}`}>
+                    {item.desc}
+                  </p>
+                  {item.summary && (
+                    <div className="mb-6 p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                      <p className="text-slate-600 text-sm leading-relaxed">{item.summary}</p>
+                    </div>
+                  )}
+                  <div className="mt-6">
+                    <a 
+                      href={item.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-blue-600 font-bold group-hover:gap-3 transition-all mb-1"
+                    >
+                      {lang === 'zh' ? '閱讀更多' : 'Read More'} <ArrowRight size={18} />
+                    </a>
+                    <p className="text-[10px] text-slate-400 flex items-center gap-1">
+                      <ExternalLink size={10} />
+                      {t.footer.externalWarning}
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             ))
           ) : (
             <div className="col-span-full text-center py-20 bg-slate-50 rounded-3xl border border-dashed border-slate-200">
               <p className="text-slate-400 font-medium">
-                {t.lang === 'zh' ? '內容正在準備中，敬請期待。' : 'Content is being prepared, please stay tuned.'}
+                {lang === 'zh' ? '內容正在準備中，敬請期待。' : 'Content is being prepared, please stay tuned.'}
               </p>
             </div>
           )}
@@ -1589,7 +1655,7 @@ export default function App() {
             <Route path="/team" element={<Team t={t} lang={lang} />} />
             <Route path="/recruitment" element={<Recruitment t={t} lang={lang} />} />
             <Route path="/news" element={<News t={t} />} />
-            <Route path="/science" element={<Science t={t} />} />
+            <Route path="/science" element={<Science t={t} lang={lang} />} />
             <Route path="/conferences" element={<Conferences t={t} lang={lang} />} />
             <Route path="/privacy" element={<Privacy t={t} lang={lang} />} />
           </Routes>
