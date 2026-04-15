@@ -142,6 +142,14 @@ const translations = {
       desc: '探索全球醫療人工智慧領域的最新研究成果與技術趨勢。',
       items: [
         {
+          date: '2025/05/15',
+          title: 'AI醫療市場規模爆發式成長 5大應用範圍成未來發展重點',
+          author: '記者彭夢竺／台北報導',
+          source: '科技島',
+          desc: 'AI醫療正逐漸改變傳統醫療模式，成為未來醫療發展的重要方向。',
+          url: 'https://www.technice.com.tw/issues/ai/172553/'
+        },
+        {
           date: '2024/09/12',
           title: 'AI病理診斷：從技術到臨床的革命性突破',
           author: '口述／雲象科技創辦人暨執行長葉肇元　整理／賴宛靖',
@@ -343,6 +351,14 @@ const translations = {
       title: 'Research, Implementation, and Future of AI in Healthcare',
       desc: 'Exploring the latest research results and technical trends in the field of global medical AI.',
       items: [
+        {
+          date: '2025/01/10',
+          title: '2025 Medical AI Trends: From Assisted Diagnosis to Precision Medicine',
+          author: 'Sci-Tech Vista Editorial Department',
+          source: 'Sci-Tech Vista',
+          desc: 'Exploring the core development directions of medical AI in 2025, including the application of multimodal large models in clinical decision-making.',
+          url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=2025-medical-ai-trends'
+        },
         {
           date: '2024/09/12',
           title: 'AI Pathology Diagnosis: A Revolutionary Breakthrough from Technology to Clinic',
