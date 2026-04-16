@@ -71,7 +71,7 @@ const translations = {
       badge: '核心技術',
       title: '技術亮點',
       desc: '透過 M4 MEDCLAW 平台，我們希望打破醫療 AI 開發的高牆，讓各級醫院都能自主打造精準的醫療大模型。',
-      image: 'assets/打破醫療 AI開發高牆.png',
+      image: 'assets/打破醫療 AI開發高牆.webp',
       cards: [
         { title: '技術亮點', desc: '強大的病灶特徵提取能力與無需專家即可適配的自動化微調技術。' },
         { title: 'M4 MEDCLAW', desc: 'Agent 輔助之醫院自主醫療影像基礎模型微調平台。' },
@@ -206,15 +206,15 @@ const translations = {
           loc: '台北 華南銀行國際會議中心',
           desc: '第 17 屆亞洲機器學習會議 (ACML 2025) 旨在提供一個國際論壇，供研究人員討論機器學習領域的最新進展。',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
-          img: 'assets/ACML2025.png',
+          img: 'assets/ACML2025.webp',
           isUpcoming: false,
           gallery: [
-            'assets/acml2025_1.png', // 請替換為您的圖片檔名 1
-            'assets/acml2025_2.png', // 請替換為您的圖片檔名 2
-            'assets/acml2025_3.png', // 請替換為您的圖片檔名 3
-            'assets/acml2025_4.png', // 請替換為您的圖片檔名 4
-            'assets/acml2025_5.png', // 請替換為您的圖片檔名 5
-            'assets/acml2025_6.png'  // 請替換為您的圖片檔名 6
+            'assets/acml2025_1.webp', // 請替換為您的圖片檔名 1
+            'assets/acml2025_2.webp', // 請替換為您的圖片檔名 2
+            'assets/acml2025_3.webp', // 請替換為您的圖片檔名 3
+            'assets/acml2025_4.webp', // 請替換為您的圖片檔名 4
+            'assets/acml2025_5.webp', // 請替換為您的圖片檔名 5
+            'assets/acml2025_6.webp'  // 請替換為您的圖片檔名 6
           ]
         },
       ],
@@ -281,7 +281,7 @@ const translations = {
       badge: 'Highlights',
       title: 'Technical Highlights',
       desc: 'Through the M4 MEDCLAW platform, we aim to break down the barriers of medical AI development, enabling hospitals to independently create precision medical foundation models.',
-      image: 'assets/Technical Highlights.png', // 請將此處替換為您的英文版圖片檔名
+      image: 'assets/Technical Highlights.webp', // 請將此處替換為您的英文版圖片檔名
       cards: [
         { title: 'Technical Highlights', desc: 'Powerful lesion feature extraction and automated fine-tuning without expert intervention.' },
         { title: 'M4 MEDCLAW', desc: 'Agent-assisted platform for autonomous medical imaging foundation model fine-tuning.' },
@@ -416,15 +416,15 @@ const translations = {
           loc: 'HNBK International Convention Center, Taipei',
           desc: 'The 17th Asian Conference on Machine Learning (ACML 2025) aims to provide an international forum for researchers to discuss the latest advances in machine learning.',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
-          img: 'assets/ACML2025.png',
+          img: 'assets/ACML2025.webp',
           isUpcoming: false,
           gallery: [
-            'assets/acml2025_1.png', // Please replace with your image filename 1
-            'assets/acml2025_2.png', // Please replace with your image filename 2
-            'assets/acml2025_3.png', // Please replace with your image filename 3
-            'assets/acml2025_4.png', // Please replace with your image filename 4
-            'assets/acml2025_5.png', // Please replace with your image filename 5
-            'assets/acml2025_6.png'  // Please replace with your image filename 6
+            'assets/acml2025_1.webp', // Please replace with your image filename 1
+            'assets/acml2025_2.webp', // Please replace with your image filename 2
+            'assets/acml2025_3.webp', // Please replace with your image filename 3
+            'assets/acml2025_4.webp', // Please replace with your image filename 4
+            'assets/acml2025_5.webp', // Please replace with your image filename 5
+            'assets/acml2025_6.webp'  // Please replace with your image filename 6
           ]
         },
       ],
@@ -581,7 +581,7 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3 group">
           <img
-            src={getImageUrl("/assets/M4_Logo.png")}
+            src={getImageUrl("/assets/M4_Logo.webp")}
             alt="M4 Logo"
             className="h-10 w-auto transition-transform group-hover:scale-105"
             referrerPolicy="no-referrer"
@@ -780,8 +780,8 @@ const InfographicSection = ({ t }) => {
         >
           {/* 
             圖片路徑已根據語言自動切換：
-            - 中文版：assets/打破醫療 AI開發高牆.png
-            - 英文版：assets/Breaking_Medical_AI_Barriers.png (請確保檔案名稱一致)
+            - 中文版：assets/打破醫療 AI開發高牆.webp
+            - 英文版：assets/Breaking_Medical_AI_Barriers.webp (請確保檔案名稱一致)
           */}
           <img 
             src={getImageUrl(t.infographic.image)} 
@@ -1483,7 +1483,7 @@ const Team = ({ t, lang }) => {
   );
 };
 
-const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "", isNested = false }) => {
+const Flowchart = ({ t, lang, src = "/assets/pipeline.webp", title = "", isNested = false }) => {
   const content = (
     <div className={`${isNested ? '' : 'max-w-7xl mx-auto px-6'}`}>
       <div className="text-center mb-10">
@@ -1492,7 +1492,7 @@ const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "", isNested
       </div>
       <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8">
         <img
-          src={getImageUrl(src || "/assets/pipeline.png")}
+          src={getImageUrl(src || "/assets/pipeline.webp")}
           alt={title || "Flowchart"}
           className="w-full h-auto rounded-2xl"
           referrerPolicy="no-referrer"
@@ -1519,12 +1519,12 @@ const Flowchart = ({ t, lang, src = "/assets/pipeline.png", title = "", isNested
 const Partners = ({ t }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const partners = [
-    { name: 'National Science and Technology Council', logo: '/assets/NSTC_Logo.png', url: 'https://www.nstc.gov.tw/' },
-    { name: 'Chang Gung University', logo: '/assets/CGU_Logo.svg', url: 'https://www.cgu.edu.tw/' },
-    { name: 'Artificial Intelligence Research Center', logo: '/assets/logo-ai-res.png', url: 'https://www.cgu.edu.tw/aic' },
-    { name: 'Taiwan AI Center of Excellence', logo: '/assets/logo-ai-coe.png', url: 'https://www.twaicoe.org/' },
-    { name: 'College of Intelligent Computing', logo: '/assets/logo-ai-coc.jpeg', url: 'https://www.cgu.edu.tw/coic' },
-    { name: 'Department of Artificial Intelligence', logo: '/assets/logo-ai-dai.png', url: 'https://www.cgu.edu.tw/ai' },
+    { name: 'National Science and Technology Council', logo: '/assets/NSTC_Logo.webp', url: 'https://www.nstc.gov.tw/' },
+    { name: 'Chang Gung University', logo: '/assets/CGU_Logo.webp', url: 'https://www.cgu.edu.tw/' },
+    { name: 'Artificial Intelligence Research Center', logo: '/assets/logo-ai-res.webp', url: 'https://www.cgu.edu.tw/aic' },
+    { name: 'Taiwan AI Center of Excellence', logo: '/assets/logo-ai-coe.webp', url: 'https://www.twaicoe.org/' },
+    { name: 'College of Intelligent Computing', logo: '/assets/logo-ai-coc.webp', url: 'https://www.cgu.edu.tw/coic' },
+    { name: 'Department of Artificial Intelligence', logo: '/assets/logo-ai-dai.webp', url: 'https://www.cgu.edu.tw/ai' },
   ];
 
   const scroll = (direction: 'left' | 'right') => {
@@ -1614,7 +1614,7 @@ const Footer = ({ t }) => {
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src={getImageUrl("/assets/M4_Logo.png")}
+                src={getImageUrl("/assets/M4_Logo.webp")}
                 alt="M4 Logo"
                 className="h-12 w-auto"
                 referrerPolicy="no-referrer"
