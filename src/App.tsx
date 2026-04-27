@@ -153,7 +153,7 @@ const translations = {
           date: '2024/09/12',
           title: 'AI病理診斷：從技術到臨床的革命性突破',
           author: '口述／雲象科技創辦人暨執行長葉肇元　整理／賴宛靖',
-          source: '工研院產業學院',
+          source: '轉載自工研院產業學院',
           desc: '利用AI奠定病理診斷新里程碑 當醫師的第二雙眼睛',
           url: 'https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f'
         },
@@ -161,7 +161,7 @@ const translations = {
           date: '2024/03/15',
           title: '智慧醫材結合AI應用新趨勢',
           author: '撰文／羅倩宜',
-          source: '工業技術與資訊月刊',
+          source: '轉載自工業技術與資訊月刊',
           desc: '高階醫療從醫院走向鄰近病患的定點醫療 生成式AI開始在醫療應用萌芽',
           url: 'https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1253016311517010576'
         },
@@ -169,7 +169,7 @@ const translations = {
           date: '2024/01/19',
           title: '生成式 AI 正如何在全球各醫療場域，提升醫護工作效率與照護品質？',
           author: '黃怡婷 科技大觀園特約編輯',
-          source: '科技大觀園',
+          source: '轉載自國家科學及技術委員會科技大觀園',
           desc: '生成式 AI 正在提升醫療工作效能 生成式 AI 應用在醫療領域的重要前提',
           url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
         },
@@ -177,7 +177,7 @@ const translations = {
           date: '2023/08/04',
           title: 'AI幫助乳房癌症攝影篩檢，助醫師工作量減半',
           author: 'Hannah',
-          source: 'AI郵報',
+          source: '轉載自AI郵報',
           desc: '改善篩檢效率並解決放射科醫師短缺等問題',
           url: 'https://reurl.cc/mpMkXG'
         }
@@ -254,7 +254,7 @@ const translations = {
       address: '單位位置：長庚大學管理大樓11樓\n　　　　　人工智慧研究中心',
       phone: '聯絡電話：886-3-2118800 ext 3003#53',
       email: '電子信箱：bettysu@cgu.edu.tw',
-      updated: '最後更新時間：2026-04-10',
+      updated: '最後更新時間：2026-04-27',
       externalWarning: '點擊連結後將前往外部網站',
     },
   },
