@@ -26,7 +26,9 @@ import {
   Newspaper,
   Presentation,
   Lock,
-  ExternalLink
+  ExternalLink,
+  Clock,
+  MapPin
 } from 'lucide-react';
 import teamData from './team.json';
 
@@ -54,7 +56,7 @@ const translations = {
       team: '團隊介紹',
       recruitment: '徵聘資訊',
       news: '活動訊息',
-      science: '人工智慧｜醫療應用',
+      science: 'AI新知',
       conferences: '學術會議',
       privacy: '隱私權政策',
       join: '計畫詳情',
@@ -120,6 +122,11 @@ const translations = {
       url: 'https://www.cgu.edu.tw/aic/Subject?nodeId=12884',
       jobs: [
         {
+          date: '2026/04/28',
+          title: '【徵聘訊息】長庚大學人工智慧研究中心 徵國科會計畫學/碩士級專任助理各一名',
+          url: 'https://www.cgu.edu.tw/aic/Subject/Detail/77537?nodeId=12884'
+        },
+        {
           date: '2025/02/03',
           title: '【徵聘訊息】長庚大學「人工智慧研究中心」誠徵研究員/副研究員/助理研究員二名',
           url: 'https://www.cgu.edu.tw/aic/Subject/Detail/43283?nodeId=12884'
@@ -134,10 +141,35 @@ const translations = {
     news: {
       badge: '活動訊息',
       title: '最新消息',
-      items: [],
+      items: [
+        {
+          date: '2026/05/05',
+          time: ' 14:00 - 16:00',
+          location: '長庚大學管理大樓11樓-AI講堂',
+          title: '【學術演講】數位轉型：大數據與人工智慧引領的臨床試驗變革',
+          desc: '講者：林士睿博士 美國Stanford 大學生物醫學資訊博士',
+          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76975?nodeId=7144'
+        },
+        {
+          date: '2026/05/12',
+          time: '15:00 - 17:00',
+          location: '長庚大學管理大樓11樓-AI講堂',
+          title: "【學術演講】Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
+          desc: '講者：Prof. Michael Lewis 美國匹茲堡大學（University of Pittsburgh）資訊學院教授/Prof. Katia Sycara 美國卡內基美隆大學（CMU）機器人研究所資深研究教授，現任機器人研究所副主任，並擔任可信任人機協作研究中心主任。',
+          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144'
+        },
+        {
+          date: '2026/05/15',
+          time: '12:10 - 13:30',
+          location: '長庚大學未來教室（管理大樓9樓）',
+          title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
+          desc: '講者：加州大學爾灣分校電機工程與計算機學系 Quoc-Viet Dang 教學副教授',
+          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/77265?nodeId=7144'
+        }
+      ],
     },
     science: {
-      badge: '人工智慧｜醫療應用',
+      badge: 'AI新知',
       title: '人工智慧技術於醫療之研究、實作與未來',
       desc: '探索全球醫療人工智慧領域的最新研究成果與技術趨勢。',
       items: [
@@ -191,12 +223,12 @@ const translations = {
       officialSite: '前往會議官方網站',
       events: [
         {
-          date: '2026/12/11',
+          date: '待定',
           title: '2026 醫療人工智慧論壇',
           subtitle: '2026 Medical AI Forum',
           loc: '桃園',
           desc: '本論壇將探討人工智慧在醫療領域的最新應用與未來趨勢，匯聚醫療與科技界的專家共同交流。（網頁正在建構中）',
-          img: 'https://picsum.photos/seed/medical-ai-2026/800/600',
+          img: 'assets/acml2025_2.webp',
           isUpcoming: true
         },
         {
@@ -264,7 +296,7 @@ const translations = {
       team: 'Team',
       recruitment: 'Recruitment',
       news: 'Activity News',
-      science: 'AI | Medical Applications',
+      science: 'AI News',
       conferences: 'Conferences',
       privacy: 'Privacy',
       join: 'Project Details',
@@ -330,6 +362,11 @@ const translations = {
       url: 'https://www.cgu.edu.tw/aic/Subject?nodeId=12884',
       jobs: [
         {
+          date: '2026/01/20',
+          title: 'Recruitment: Full-time Research Assistant (1 position)',
+          url: 'https://www.cgu.edu.tw/aic/Subject/Detail/77350?nodeId=12884'
+        },
+        {
           date: '2025/02/03',
           title: 'Recruitment: Research Fellow/Associate Research Fellow/Assistant Research Fellow (2 positions)',
           url: 'https://www.cgu.edu.tw/aic/Subject/Detail/43283?nodeId=12884'
@@ -344,10 +381,35 @@ const translations = {
     news: {
       badge: 'Activity News',
       title: 'Latest Updates',
-      items: [],
+      items: [
+        {
+          date: '2026/05/05',
+          time: ' 14:00 - 16:00',
+          location: 'AI Lecture Hall, 11F Management Building, Chang Gung University',
+          title: '[Academic Talk] Digital Transformation: Revolutionizing Clinical Trials with Big Data and AI',
+          desc: 'Speaker: Dr. Shih-Jui Lin, PhD in Biomedical Informatics, Stanford University, USA',
+          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76975?nodeId=7144'
+        },
+        {
+          date: '2026/05/12',
+          time: '15:00 - 17:00',
+          location: 'AI Lecture Hall, 11F Management Building, Chang Gung University',
+          title: "【學術演講】Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
+          desc: 'Speakers: Prof. Michael Lewis (University of Pittsburgh) / Prof. Katia Sycara (Carnegie Mellon University)',
+          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144'
+        },
+        {
+          date: '2026/05/15',
+          time: '12:10 - 13:30',
+          location: 'Future Classroom, 9F Management Building, Chang Gung University',
+          title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
+          desc: 'Speaker: Assoc. Prof. Quoc-Viet Dang, Department of Electrical Engineering and Computer Science, UC Irvine',
+          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/77265?nodeId=7144'
+        }
+      ],
     },
     science: {
-      badge: 'AI | Medical Applications',
+      badge: 'AI News',
       title: 'Research, Implementation, and Future of AI in Healthcare',
       desc: 'Exploring the latest research results and technical trends in the field of global medical AI.',
       items: [
@@ -463,7 +525,7 @@ const translations = {
       contact: 'Contact Info',
       address: 'Address: 11F, Management Building, Chang Gung University,AI Research Center',
       phone: 'Phone: 886-3-2118800 ext 3003#53',
-      email: 'Email: BettySu@cgu.edu.tw',
+      email: 'Email: bettysu@cgu.edu.tw',
       updated: 'Last Updated: 2026-04-10',
       externalWarning: 'Clicking the link will take you to an external website',
     },
@@ -559,20 +621,12 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
       href: '/recruitment'
     },
     {
-      name: t.nav.news,
-      href: '/news'
-    },
-    {
-      name: t.nav.science,
-      href: '/science'
-    },
-    {
       name: t.nav.conferences,
       href: '/conferences',
     },
     {
-      name: t.nav.privacy,
-      href: '/privacy'
+      name: t.nav.science,
+      href: '/science'
     },
   ];
 
@@ -618,10 +672,6 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
             <Languages size={16} />
             {lang === 'zh' ? 'EN' : '中文'}
           </button>
-
-          <Link to="/about" className="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-md shadow-blue-100">
-            {t.nav.join}
-          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -690,13 +740,6 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
                   )}
                 </div>
               ))}
-              <Link
-                to="/about"
-                className="bg-blue-600 text-white px-5 py-3 rounded-xl text-center font-semibold"
-                onClick={() => setIsOpen(false)}
-              >
-                {t.nav.join}
-              </Link>
             </div>
           </motion.div>
         )}
@@ -730,78 +773,232 @@ const Hero = ({ t, lang }) => {
               {t.hero.subtitle}
             </span>
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 leading-relaxed">
             {t.hero.desc}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/about" className="w-full sm:w-auto bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-200 flex items-center justify-center gap-2 group">
-              {t.hero.cta1}
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link to="/recruitment" className="w-full sm:w-auto bg-slate-50 text-slate-900 border border-slate-200 px-8 py-4 rounded-full text-lg font-bold hover:bg-slate-100 transition-all text-center">
-              {t.hero.cta2}
-            </Link>
-          </div>
         </motion.div>
       </div>
     </section>
   );
 };
 
-const InfographicSection = ({ t }) => {
+const ActivityNewsPreview = ({ t, lang }) => {
+  return (
+    <section className="py-20 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-4">
+                {t.news.badge}
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900">
+                {t.news.title}
+              </h2>
+            </motion.div>
+          </div>
+          <Link 
+            to="/news" 
+            className="flex items-center gap-2 text-blue-600 font-bold hover:gap-3 transition-all"
+          >
+            {lang === 'zh' ? '更多訊息' : 'More News'} <ArrowRight size={20} />
+          </Link>
+        </div>
+
+        {t.news.items.length > 0 ? (
+          <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl shadow-blue-50/50 border border-blue-100 overflow-hidden">
+            <div className="grid grid-cols-1 divide-y divide-slate-100">
+              <div className="bg-slate-50 px-8 py-4 grid grid-cols-12 gap-4 text-sm font-bold text-slate-500 uppercase tracking-wider">
+                <div className="col-span-2">{lang === 'zh' ? '日期' : 'Date'}</div>
+                <div className="col-span-10">{lang === 'zh' ? '活動主題與詳情' : 'Activity Details'}</div>
+              </div>
+              {[...t.news.items]
+                .sort((a, b) => b.date.localeCompare(a.date))
+                .slice(0, 5)
+                .map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: i * 0.05 }}
+                  >
+                    {item.link && item.link !== '#' ? (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-8 py-6 grid grid-cols-12 gap-8 hover:bg-blue-50/50 transition-all group items-start"
+                      >
+                        <div className="col-span-4 md:col-span-3 flex flex-col gap-2">
+                          <div className="text-slate-900 font-bold text-sm md:text-base whitespace-nowrap">{item.date}</div>
+                          {item.time && (
+                            <div className="text-slate-500 text-xs flex items-center gap-1.5 font-medium">
+                              <Clock size={12} className="text-blue-400 shrink-0" />
+                              <span>{item.time}</span>
+                            </div>
+                          )}
+                          {item.location && (
+                            <div className="text-slate-500 text-xs flex items-start gap-1.5 font-medium">
+                              <MapPin size={12} className="text-blue-400 shrink-0 mt-0.5" />
+                              <span className="leading-tight">{item.location}</span>
+                            </div>
+                          )}
+                        </div>
+                        <div className="col-span-8 md:col-span-9">
+                          <div className="text-slate-900 font-bold group-hover:text-blue-600 transition-colors text-sm md:text-lg mb-2">
+                            <span className="mr-2">{item.title}</span>
+                            <div className="inline-flex items-center gap-1 bg-blue-100 text-blue-600 px-2 py-0.5 rounded text-[10px] md:text-xs font-bold whitespace-nowrap align-middle">
+                              <ExternalLink size={10} />
+                              <span>{lang === 'zh' ? '前往外部網站' : 'Go to Site'}</span>
+                            </div>
+                          </div>
+                          <div className="text-slate-500 text-xs md:text-sm font-medium italic">
+                            {item.desc.split('\n')[0].split('/').map((part, idx) => (
+                              <div key={idx} className={idx > 0 ? "mt-1 pl-4 relative before:content-['/'] before:absolute before:left-0 before:text-slate-300" : ""}>
+                                {part.trim()}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </a>
+                    ) : (
+                      <Link
+                        to="/news"
+                        className="px-8 py-6 grid grid-cols-12 gap-8 hover:bg-blue-50/50 transition-all group items-start"
+                      >
+                        <div className="col-span-4 md:col-span-3 flex flex-col gap-2">
+                          <div className="text-slate-900 font-bold text-sm md:text-base whitespace-nowrap">{item.date}</div>
+                          {item.time && (
+                            <div className="text-slate-500 text-xs flex items-center gap-1.5 font-medium">
+                              <Clock size={12} className="text-blue-400 shrink-0" />
+                              <span>{item.time}</span>
+                            </div>
+                          )}
+                          {item.location && (
+                            <div className="text-slate-500 text-xs flex items-start gap-1.5 font-medium">
+                              <MapPin size={12} className="text-blue-400 shrink-0 mt-0.5" />
+                              <span className="leading-tight">{item.location}</span>
+                            </div>
+                          )}
+                        </div>
+                        <div className="col-span-8 md:col-span-9">
+                          <div className="text-slate-900 font-bold group-hover:text-blue-600 flex items-start gap-2 transition-colors text-sm md:text-lg mb-2">
+                            <span className="line-clamp-1">{item.title}</span>
+                            <ArrowRight size={18} className="shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all mt-1 md:mt-0" />
+                          </div>
+                          <div className="text-slate-500 text-xs md:text-sm font-medium italic">
+                            {item.desc.split('\n')[0].split('/').map((part, idx) => (
+                              <div key={idx} className={idx > 0 ? "mt-1 pl-4 relative before:content-['/'] before:absolute before:left-0 before:text-slate-300" : ""}>
+                                {part.trim()}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </Link>
+                    )}
+                  </motion.div>
+                ))}
+            </div>
+          </div>
+        ) : (
+          <div className="py-20 bg-white rounded-3xl border border-dashed border-slate-200 text-center">
+            <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 text-slate-300">
+              <Newspaper size={32} />
+            </div>
+            <p className="text-slate-400 font-medium">
+              {t.lang === 'zh' ? '目前尚無活動訊息' : 'No activity news at the moment'}
+            </p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+const InfographicCards = ({ t }) => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-4">
-              {t.infographic.badge}
-            </span>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
-              {t.infographic.title}
-            </h2>
-            <p className="max-w-3xl mx-auto text-lg text-slate-600">
-              {t.infographic.desc}
-            </p>
-          </motion.div>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8"
-        >
-          {/* 
-            圖片路徑已根據語言自動切換：
-            - 中文版：assets/打破醫療 AI開發高牆.webp
-            - 英文版：assets/Breaking_Medical_AI_Barriers.webp (請確保檔案名稱一致)
-          */}
-          <img 
-            src={getImageUrl(t.infographic.image)} 
-            alt="M4 MEDCLAW Infographic" 
-            className="w-full h-auto rounded-xl shadow-inner"
-            referrerPolicy="no-referrer"
-          />
-          
-          <div className="absolute inset-0 pointer-events-none border-[12px] border-white/10 rounded-3xl"></div>
-        </motion.div>
-        
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {t.infographic.cards.map((card, i) => (
-            <div key={i} className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <h3 className="font-bold text-slate-900 mb-2">{card.title}</h3>
-              <p className="text-sm text-slate-600">{card.desc}</p>
-            </div>
+            <motion.div 
+              key={i} 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 className="text-xl font-bold text-slate-900 mb-3">{card.title}</h3>
+              <p className="text-slate-600 leading-relaxed">{card.desc}</p>
+            </motion.div>
           ))}
         </div>
       </div>
+    </section>
+  );
+};
+
+const InfographicSection = ({ t, isNested = false }) => {
+  const content = (
+    <div className={`${isNested ? '' : 'max-w-7xl mx-auto px-6'}`}>
+      <div className={`text-center ${isNested ? 'mb-8' : 'mb-16'}`}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          {isNested ? (
+            <h3 className="text-2xl md:text-3xl font-black text-blue-600 mb-4">
+              {t.infographic.badge}
+            </h3>
+          ) : (
+            <>
+              <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-4">
+                {t.infographic.badge}
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
+                {t.infographic.title}
+              </h2>
+            </>
+          )}
+          <p className={`${isNested ? 'text-base' : 'text-lg'} max-w-3xl mx-auto text-slate-600`}>
+            {t.infographic.desc}
+          </p>
+        </motion.div>
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className={`relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 ${isNested ? 'p-2 md:p-4' : 'p-4 md:p-8'}`}
+      >
+        <img 
+          src={getImageUrl(t.infographic.image)} 
+          alt="M4 MEDCLAW Infographic" 
+          className="w-full h-auto rounded-xl shadow-inner"
+          referrerPolicy="no-referrer"
+        />
+        
+        <div className="absolute inset-0 pointer-events-none border-[12px] border-white/10 rounded-3xl"></div>
+      </motion.div>
+    </div>
+  );
+
+  if (isNested) return <div className="py-4">{content}</div>;
+
+  return (
+    <section className="py-20 bg-white">
+      {content}
     </section>
   );
 };
@@ -881,7 +1078,13 @@ const About = ({ t, lang }) => {
                   </p>
                 </div>
                 <div className="w-full text-left">
-                  <div className="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-indigo-50">
+                  <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-indigo-50">
+                    {sections[activeTab].id === 'goals' && (
+                      <InfographicSection t={t} isNested={true} />
+                    )}
+                    {sections[activeTab].id === 'process' && (
+                      <Flowchart t={t} lang={lang} isNested={true} />
+                    )}
                     <div className="text-lg text-slate-700 leading-relaxed whitespace-pre-wrap">
                       {renderBoldText(sections[activeTab].content)}
                     </div>
@@ -949,8 +1152,6 @@ const About = ({ t, lang }) => {
           </AnimatePresence>
         </div>
 
-        <Flowchart t={t} lang={lang} isNested={true} />
-
         {/* External Link */}
         <div className="mt-16 text-center">
           <a
@@ -988,14 +1189,16 @@ const Recruitment = ({ t, lang }) => {
               <div className="col-span-3">{lang === 'zh' ? '日期' : 'Date'}</div>
               <div className="col-span-9">{lang === 'zh' ? '職缺' : 'Job Title'}</div>
             </div>
-            {t.recruitment.jobs.map((job, i) => (
-              <a
-                key={i}
-                href={job.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-6 grid grid-cols-12 gap-4 hover:bg-blue-50/50 transition-all group items-center"
-              >
+            {[...t.recruitment.jobs]
+              .sort((a, b) => b.date.localeCompare(a.date))
+              .map((job, i) => (
+                <a
+                  key={i}
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-6 grid grid-cols-12 gap-4 hover:bg-blue-50/50 transition-all group items-center"
+                >
                 <div className="col-span-3 text-slate-500 font-medium">{job.date}</div>
                 <div className="col-span-9">
                   <div className="text-slate-900 font-bold group-hover:text-blue-600 flex items-center gap-2 transition-colors">
@@ -1012,23 +1215,12 @@ const Recruitment = ({ t, lang }) => {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <a
-            href={t.recruitment.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-100 group"
-          >
-            {t.recruitment.linkText}
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
       </div>
     </section>
   );
 };
 
-const News = ({ t }) => {
+const News = ({ t, lang }) => {
   return (
     <section id="news" className="pt-32 pb-20 bg-slate-50/50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
@@ -1046,13 +1238,54 @@ const News = ({ t }) => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col md:flex-row gap-8 p-8 rounded-3xl bg-white shadow-sm border border-slate-100 items-start hover:shadow-md transition-shadow"
+                className="flex flex-col md:flex-row gap-8 p-8 rounded-3xl bg-white shadow-sm border border-slate-100 items-start hover:shadow-md transition-shadow relative"
               >
-                <div className="bg-blue-50 text-blue-600 font-bold px-4 py-2 rounded-xl text-sm whitespace-nowrap">{item.date}</div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+                <div className="bg-blue-50 text-blue-600 font-bold px-4 py-2 rounded-xl text-sm whitespace-nowrap h-fit text-center min-w-[120px]">
+                  <div>{item.date}</div>
+                  {item.time && (
+                    <div className="text-[10px] mt-1 text-blue-400 font-medium flex items-center justify-center gap-1">
+                      <Clock size={10} />
+                      {item.time}
+                    </div>
+                  )}
                 </div>
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-center gap-3 mb-3">
+                    <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+                    {item.link && item.link !== '#' && (
+                      <div className="inline-flex items-center gap-1 bg-blue-100 text-blue-600 px-2 py-0.5 rounded text-xs font-bold">
+                        <ExternalLink size={12} />
+                        <span>{lang === 'zh' ? '前往外部網站' : 'Go to Site'}</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-6 mb-4 text-sm text-slate-500 font-medium">
+                    {item.location && (
+                      <div className="flex items-center gap-2">
+                        <MapPin size={16} className="text-blue-500" />
+                        <span>{item.location}</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="text-slate-600 leading-relaxed whitespace-pre-wrap">
+                    {item.desc.split('\n').map((line, lIdx) => (
+                      <div key={lIdx} className={lIdx > 0 ? "mt-4" : ""}>
+                        {lIdx === 0 ? (
+                          line.split('/').map((part, pIdx) => (
+                            <div key={pIdx} className={pIdx > 0 ? "mt-1 pl-4 relative before:content-['/'] before:absolute before:left-0 before:text-slate-300" : ""}>
+                              {part.trim()}
+                            </div>
+                          ))
+                        ) : (
+                          line
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {item.link && item.link !== '#' && (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10" aria-label="External Link" />
+                )}
               </motion.div>
             ))}
           </div>
@@ -1061,7 +1294,7 @@ const News = ({ t }) => {
             <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4 text-slate-300">
               <Newspaper size={32} />
             </div>
-            <p className="text-slate-400 font-medium">{t.lang === 'zh' ? '目前尚無活動訊息' : 'No activity news at the moment'}</p>
+            <p className="text-slate-400 font-medium">{lang === 'zh' ? '目前尚無活動訊息' : 'No activity news at the moment'}</p>
           </div>
         )}
       </div>
@@ -1408,75 +1641,108 @@ const Privacy = ({ t, lang }) => {
       If you have questions about this policy, please contact us via the information provided in the footer.
       */
 
+const TeamMember = ({ member, lang, t }: any) => {
+  const name = lang === 'en' ? member.nameEn : member.name;
+  const title = lang === 'en' ? member.titleEn : member.title;
+  const expertise = lang === 'en' ? member.expertiseEn : member.expertise;
+
+  return (
+    <div className="flex flex-col items-center text-center group">
+      <div className="w-32 h-32 rounded-full overflow-hidden mb-8 ring-8 ring-slate-50 group-hover:ring-blue-50 transition-all duration-500 shadow-xl">
+        <img
+          src={getImageUrl(member.img)}
+          alt={name}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=f1f5f9&color=1d4ed8&bold=true`;
+          }}
+        />
+      </div>
+
+      <h3 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors line-clamp-1">{name}</h3>
+
+      <p className="text-blue-700 font-bold text-base mb-4 leading-relaxed line-clamp-2 min-h-[3rem]">
+        {title}
+      </p>
+
+      <div className="flex gap-4 mb-4">
+        {member.website && (
+          <a
+            href={member.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all"
+            title={`${lang === 'zh' ? '網站' : 'Website'} - ${t.footer.externalWarning}`}
+          >
+            <Globe size={20} />
+          </a>
+        )}
+        {member.email && (
+          <a
+            href={`mailto:${member.email}`}
+            className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all"
+            title="Email"
+          >
+            <Mail size={20} />
+          </a>
+        )}
+      </div>
+
+      <div className="w-full pt-2 border-t border-slate-100">
+        <p className="text-slate-800 text-sm font-medium leading-loose px-4 line-clamp-3">
+          {expertise.join(' • ')}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 const Team = ({ t, lang }) => {
+  const row1 = teamData.slice(0, 2);
+  const row2 = teamData.slice(2, 6);
+  const row3 = teamData.slice(6, 11);
+  const row4 = teamData.slice(11, 12);
+
   return (
     <section id="team" className="pt-32 pb-20 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <span className="text-blue-700 font-bold tracking-widest uppercase text-xl">{t.team.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-4">{t.team.title}</h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto mt-6" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
-          {teamData.map((member, i) => {
-            const name = lang === 'en' ? member.nameEn : member.name;
-            const title = lang === 'en' ? member.titleEn : member.title;
-            const expertise = lang === 'en' ? member.expertiseEn : member.expertise;
+        <div className="space-y-24">
+          {/* Row 1: 2 Members */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-2xl mx-auto">
+            {row1.map((member, i) => (
+              <TeamMember key={i} member={member} lang={lang} t={t} />
+            ))}
+          </div>
 
-            return (
-              <div key={i} className="flex flex-col items-center text-center group">
-                {/* Smaller, cleaner image */}
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-8 ring-8 ring-slate-50 group-hover:ring-blue-50 transition-all duration-500 shadow-xl">
-                  <img
-                    src={getImageUrl(member.img)}
-                    alt={name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
+          {/* Row 2: 4 Members */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+            {row2.map((member, i) => (
+              <TeamMember key={i} member={member} lang={lang} t={t} />
+            ))}
+          </div>
 
-                {/* Prominent Name */}
-                <h3 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">{name}</h3>
+          {/* Row 3: 5 Members */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+            {row3.map((member, i) => (
+              <TeamMember key={i} member={member} lang={lang} t={t} />
+            ))}
+          </div>
 
-                {/* Prominent Title - Darker and larger */}
-                <p className="text-blue-700 font-bold text-base mb-4 leading-relaxed max-w-[280px]">
-                  {title}
-                </p>
-
-                {/* Links */}
-                <div className="flex gap-4 mb-4">
-                  {member.website && (
-                    <a
-                      href={member.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all"
-                      title={`${lang === 'zh' ? '網站' : 'Website'} - ${t.footer.externalWarning}`}
-                    >
-                      <Globe size={20} />
-                    </a>
-                  )}
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all"
-                      title="Email"
-                    >
-                      <Mail size={20} />
-                    </a>
-                  )}
-                </div>
-
-                {/* Expertise - Clearer and darker */}
-                <div className="w-full pt-2 border-t border-slate-100">
-                  <p className="text-slate-800 text-sm font-medium leading-loose px-4">
-                    {expertise.join(' • ')}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+          {/* Row 4: 1 Member */}
+          <div className="flex justify-center">
+            <div className="max-w-[300px] w-full">
+              {row4.map((member, i) => (
+                <TeamMember key={i} member={member} lang={lang} t={t} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1507,7 +1773,7 @@ const Flowchart = ({ t, lang, src = "/assets/pipeline.webp", title = "", isNeste
     </div>
   );
 
-  if (isNested) return <div className="py-16">{content}</div>;
+  if (isNested) return <div className="py-4">{content}</div>;
 
   return (
     <section className="py-16 bg-white">
@@ -1696,13 +1962,14 @@ export default function App() {
             <Route path="/" element={
               <>
                 <Hero t={t} lang={lang} />
-                <InfographicSection t={t} />
+                <ActivityNewsPreview t={t} lang={lang} />
+                <InfographicCards t={t} />
               </>
             } />
             <Route path="/about" element={<About t={t} lang={lang} />} />
             <Route path="/team" element={<Team t={t} lang={lang} />} />
             <Route path="/recruitment" element={<Recruitment t={t} lang={lang} />} />
-            <Route path="/news" element={<News t={t} />} />
+            <Route path="/news" element={<News t={t} lang={lang} />} />
             <Route path="/science" element={<Science t={t} lang={lang} />} />
             <Route path="/conferences" element={<Conferences t={t} lang={lang} />} />
             <Route path="/privacy" element={<Privacy t={t} lang={lang} />} />

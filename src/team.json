@@ -16,7 +16,7 @@
     "title": "共同主持人",
     "titleEn": "Co-Principal Investigator",
     "img": "/assets/王祐中.webp",
-    "website": "https://sites.google.com/view/wycc-cgu/%E9%A6%96%E9%A0%81",
+    "website": "https://www.cgu.edu.tw/ai/FullTimeProfessorManagement/Detail/d333ffe8-af47-4b45-b698-ed47dd851167?nodeId=17057",
     "email": "lihua@example.com",
     "expertise": ["嵌入式系統", "機器學習"],
     "expertiseEn": ["Embedded Systems", "Machine Learning"]
@@ -33,15 +33,15 @@
     "expertiseEn": ["Biomedical Applications of Machine Learning", "Machine Learning for Data Analysis", "High-throughput and Multiplex Optical Biosensors", "Isothermal Nucleic Acid Amplification Technology"]
   },
   {
-    "name": "林英嘉",
-    "nameEn": "Ying-Jia Lin",
+    "name": "周福強",
+    "nameEn": "Fu-Chiang Chou",
     "title": "團隊成員",
-    "titleEn": "Assistant Professor",
-    "img": "/assets/林英嘉.webp",
-    "website": "https://yingjialin.org/about/",
-    "email": "mingli@example.com",
-    "expertise": ["自然語言處理", "大型語言模型", "醫學文字探勘", "視覺語言模型", "序列標註"],
-    "expertiseEn": ["Natural Language Processing", "Large Language Models", "Medical Text Mining", "Vision-Language Models", "Sequence Labeling"]
+    "titleEn": "Researcher",
+    "img": "/assets/周福強.webp",
+    "website": "https://scholar.google.com/citations?user=Z8MFDzIAAAAJ&hl=zh-TW",
+    "email": "fcc@cgu.edu.tw",
+    "expertise": ["數位信號處理", "生醫訊號", "語音辨識與合成", "感測器應用", "智慧健康與醫療應用"],
+    "expertiseEn": ["Digital Signal Processing", "Biomedical Signals", "Speech Recognition and Synthesis", "Sensor Applications", "Smart Health and Medical Applications"]
   },
   {
     "name": "闕壯華",
@@ -55,15 +55,26 @@
     "expertiseEn": ["Machine Learning", "Artificial Intelligence", "Smart Manufacturing Applications"]
   },
   {
-    "name": "周福強",
-    "nameEn": "Fu-Chiang Chou",
+    "name": "林英嘉",
+    "nameEn": "Ying-Jia Lin",
     "title": "團隊成員",
-    "titleEn": "Researcher",
-    "img": "/assets/周福強.webp",
-    "website": "https://scholar.google.com/citations?user=Z8MFDzIAAAAJ&hl=zh-TW",
-    "email": "fcc@cgu.edu.tw",
-    "expertise": ["數位信號處理", "生醫訊號", "語音辨識與合成", "感測器應用", "智慧健康與醫療應用"],
-    "expertiseEn": ["Digital Signal Processing", "Biomedical Signals", "Speech Recognition and Synthesis", "Sensor Applications", "Smart Health and Medical Applications"]
+    "titleEn": "Assistant Professor",
+    "img": "/assets/林英嘉.webp",
+    "website": "https://yingjialin.org/about/",
+    "email": "mingli@example.com",
+    "expertise": ["自然語言處理", "大型語言模型", "醫學文字探勘", "視覺語言模型", "序列標註"],
+    "expertiseEn": ["Natural Language Processing", "Large Language Models", "Medical Text Mining", "Vision-Language Models", "Sequence Labeling"]
+  },
+  {
+    "name": "陳冠宇",
+    "nameEn": "Alfred Chen",
+    "title": "團隊成員",
+    "titleEn": "Research Engineer",
+    "img": "/assets/陳冠宇.webp",
+    "website": "https://www.cgu.edu.tw/Uploads/upload/6846e7ce-2af5-483e-a012-dae6585ef5ab.png",
+    "email": "alfred_chen@cgu.edu.tw",
+    "expertise": ["防火牆", "網路工程", "高可靠性", "資料中心運維", "DevOps"],
+    "expertiseEn": ["Firewall", "Network Engineering", "High Availability", "Data Center Operations", "DevOps"]
   },
   {
     "name": "高嘉隆",
@@ -77,26 +88,15 @@
     "expertiseEn": ["Machine Learning", "Self-supervised Learning"]
   },
   {
-    "name": "袁聖博",
-    "nameEn": "Daniel Yuan",
+    "name": "劉建良",
+    "nameEn": "Chien-Liang Liu",
     "title": "團隊成員",
     "titleEn": "Research Engineer",
-    "img": "/assets/袁聖博.webp",
-    "website": "https://winterbelieve.github.io/",
-    "email": "datong@example.com",
-    "expertise": ["人工智慧", "機器學習", "深度學習", "電腦視覺", "臨床醫學", "醫學影像", "分散式系統", "基礎模型"],
-    "expertiseEn": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Computer Vision", "Clinical Medicine", "Medical Imaging", "Distributed Systems", "Foundation Models"]
-  },
-  {
-    "name": "陳冠宇",
-    "nameEn": "Alfred",
-    "title": "團隊成員",
-    "titleEn": "Research Engineer",
-    "img": "/assets/陳冠宇.webp",
-    "website": "https://www.cgu.edu.tw/Uploads/upload/6846e7ce-2af5-483e-a012-dae6585ef5ab.png",
-    "email": "alfred_chen@cgu.edu.tw",
-    "expertise": ["防火牆", "網路工程", "高可靠性", "資料中心運維", "DevOps"],
-    "expertiseEn": ["Firewall", "Network Engineering", "High Availability", "Data Center Operations", "DevOps"]
+    "img": "/assets/劉建良.webp",
+    "website": "https://nail1021734.github.io/",
+    "email": "liucl@cgu.edu.tw",
+    "expertise": ["機器學習", "深度學習", "自然語言處理"],
+    "expertiseEn": ["Machine Learning", "Deep Learning", "Natural Language Processing"]
   },
   {
     "name": "王柏鈞",
@@ -110,14 +110,25 @@
     "expertiseEn": ["Model Distillation", "Agent AI", "MRI Analysis", "Medical Imaging"]
   },
   {
-    "name": "劉建良",
-    "nameEn": "Chien-Liang Liu",
+    "name": "袁聖博",
+    "nameEn": "Daniel Yuan",
     "title": "團隊成員",
     "titleEn": "Research Engineer",
-    "img": "/assets/劉建良.webp",
-    "website": "https://nail1021734.github.io/",
-    "email": "liucl@cgu.edu.tw",
-    "expertise": ["機器學習", "深度學習", "自然語言處理"],
-    "expertiseEn": ["Machine Learning", "Deep Learning", "Natural Language Processing"]
+    "img": "/assets/袁聖博.webp",
+    "website": "https://winterbelieve.github.io/",
+    "email": "datong@example.com",
+    "expertise": ["人工智慧", "機器學習", "深度學習", "電腦視覺", "臨床醫學", "醫學影像", "分散式系統", "基礎模型"],
+    "expertiseEn": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Computer Vision", "Clinical Medicine", "Medical Imaging", "Distributed Systems", "Foundation Models"]
+  },
+  {
+    "name": "蘇家晴",
+    "nameEn": "Jia-Ching Su",
+    "title": "團隊成員",
+    "titleEn": "Project Secretary",
+    "img": "/assets/蘇家晴.webp",
+    "website": "https://ai.studio/apps/93c784d1-46b0-4a06-8193-e8b57fcff6b6?fullscreenApplet=true",
+    "email": "bettysu@cgu.edu.tw",
+    "expertise": ["計畫秘書"],
+    "expertiseEn": ["Project Secretary"]
   }
 ]
