@@ -849,9 +849,9 @@ const ActivityNewsPreview = ({ t, lang }) => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-8 py-6 grid grid-cols-12 gap-8 hover:bg-blue-50/50 transition-all group items-start"
+                        className="px-6 py-6 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 hover:bg-blue-50/50 transition-all group items-start"
                       >
-                        <div className="col-span-4 md:col-span-3 flex flex-col gap-2">
+                        <div className="md:col-span-3 flex flex-col gap-1 md:gap-2">
                           <div className="text-slate-900 font-bold text-sm md:text-base whitespace-nowrap">{item.date}</div>
                           {item.time && (
                             <div className="text-slate-500 text-xs flex items-center gap-1.5 font-medium">
@@ -866,7 +866,7 @@ const ActivityNewsPreview = ({ t, lang }) => {
                             </div>
                           )}
                         </div>
-                        <div className="col-span-8 md:col-span-9">
+                        <div className="md:col-span-9">
                           <div className="text-slate-900 font-bold group-hover:text-blue-600 transition-colors text-sm md:text-lg mb-2">
                             <span className="mr-2">{item.title}</span>
                             <div className="inline-flex items-center gap-1 bg-blue-100 text-blue-600 px-2 py-0.5 rounded text-[10px] md:text-xs font-bold whitespace-nowrap align-middle">
@@ -886,9 +886,9 @@ const ActivityNewsPreview = ({ t, lang }) => {
                     ) : (
                       <Link
                         to="/news"
-                        className="px-8 py-6 grid grid-cols-12 gap-8 hover:bg-blue-50/50 transition-all group items-start"
+                        className="px-6 py-6 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 hover:bg-blue-50/50 transition-all group items-start"
                       >
-                        <div className="col-span-4 md:col-span-3 flex flex-col gap-2">
+                        <div className="md:col-span-3 flex flex-col gap-1 md:gap-2">
                           <div className="text-slate-900 font-bold text-sm md:text-base whitespace-nowrap">{item.date}</div>
                           {item.time && (
                             <div className="text-slate-500 text-xs flex items-center gap-1.5 font-medium">
@@ -903,7 +903,7 @@ const ActivityNewsPreview = ({ t, lang }) => {
                             </div>
                           )}
                         </div>
-                        <div className="col-span-8 md:col-span-9">
+                        <div className="md:col-span-9">
                           <div className="text-slate-900 font-bold group-hover:text-blue-600 flex items-start gap-2 transition-colors text-sm md:text-lg mb-2">
                             <span className="line-clamp-1">{item.title}</span>
                             <ArrowRight size={18} className="shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all mt-1 md:mt-0" />
