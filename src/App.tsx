@@ -802,7 +802,7 @@ const ActivityNewsPreview = ({ t, lang }) => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
