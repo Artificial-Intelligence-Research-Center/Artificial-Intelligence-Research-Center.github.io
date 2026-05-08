@@ -1534,8 +1534,7 @@ const ConferenceItem = ({ event, t, lang }: { event: any, t: any, lang: any, key
   );
 };
 
-const ConferenceBackgroundSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const ConferenceMarquee = () => {
   const bgImages = [
     'assets/acml2025_1.webp',
     'assets/acml2025_2.webp',
@@ -1545,30 +1544,33 @@ const ConferenceBackgroundSlider = () => {
     'assets/acml2025_6.webp',
   ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % bgImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+  const marqueeImages = [...bgImages, ...bgImages];
 
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-      {/* 讓相片從標題下方開始顯示，保留上方空白背景 */}
-      <div className="absolute top-[250px] inset-x-0 bottom-0 flex items-start justify-center">
-        {bgImages.map((src, index) => (
-          <motion.img
-            key={src}
-            src={getImageUrl(src)}
-            initial={false}
-            animate={{ 
-              opacity: index === currentIndex ? 0.7 : 0
-            }}
-            transition={{ duration: 2, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full object-contain object-top"
-          />
+    <div className="relative w-full overflow-hidden py-12 mb-16 border-y border-slate-100 bg-white opacity-75">
+      <motion.div 
+        className="flex gap-6 w-max"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{ 
+          repeat: Infinity, 
+          ease: "linear", 
+          duration: 30 
+        }}
+      >
+        {marqueeImages.map((src, index) => (
+          <div key={index} className="w-72 md:w-96 aspect-video rounded-2xl overflow-hidden shadow-sm shrink-0 border-4 border-white bg-slate-50">
+            <img 
+              src={getImageUrl(src)} 
+              alt={`Conference Moment`} 
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = `https://picsum.photos/seed/conf-${index}/400/300`;
+              }}
+            />
+          </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
@@ -1578,14 +1580,18 @@ const Conferences = ({ t, lang }) => {
   const pastEvents = t.conferences.events.filter(e => !e.isUpcoming);
 
   return (
-    <section id="conferences" className="pt-32 pb-20 relative min-h-screen overflow-hidden">
-      <ConferenceBackgroundSlider />
+    <section id="conferences" className="pt-32 pb-20 relative min-h-screen bg-slate-50/30">
       <div className="max-w-5xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.conferences.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.conferences.title}</h2>
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
         </div>
+      </div>
+
+      <ConferenceMarquee />
+
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
 
         {/* Upcoming Section */}
         {upcomingEvents.length > 0 && (
