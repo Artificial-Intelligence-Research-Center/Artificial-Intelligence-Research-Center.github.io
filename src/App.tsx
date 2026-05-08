@@ -143,6 +143,14 @@ const translations = {
       title: '最新消息',
       items: [
         {
+          date: '2026/05/25',
+          time: '12:30 - 13:30',
+          location: '長庚大學管理大樓11樓-AI講堂',
+          title: '【學術演講】Macrophages, Chronic Diseases and Aging',
+          desc: '講者：Prof. Jianzhu Chen 現任麻省理工學院生物學系教授',
+          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
+        },
+        {
           date: '2026/05/05',
           time: ' 14:00 - 16:00',
           location: '長庚大學管理大樓11樓-AI講堂',
@@ -382,6 +390,14 @@ const translations = {
       badge: 'Activity News',
       title: 'Latest Updates',
       items: [
+        {
+          date: 'YYYY/MM/DD',
+          time: 'HH:MM - HH:MM',
+          location: 'Please enter location',
+          title: '[Activity Type] Please enter title',
+          desc: 'Please enter description',
+          link: '#'
+        },
         {
           date: '2026/05/05',
           time: ' 14:00 - 16:00',
@@ -1315,7 +1331,7 @@ const Science = ({ t, lang }) => {
 
         <div className="flex flex-col gap-8 max-w-5xl mx-auto">
           {t.science.items.length > 0 ? (
-            t.science.items.map((item, i) => (
+            [...t.science.items].sort((a, b) => b.date.localeCompare(a.date)).map((item, i) => (
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
@@ -1386,7 +1402,7 @@ const ConferenceItem = ({ event, t, lang }: { event: any, t: any, lang: any, key
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all hover:shadow-md mb-4">
+    <div className="bg-white/80 rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition-all hover:shadow-md mb-4">
       <div
         className="p-6 flex flex-col md:flex-row gap-8 items-center cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
@@ -1518,13 +1534,53 @@ const ConferenceItem = ({ event, t, lang }: { event: any, t: any, lang: any, key
   );
 };
 
+const ConferenceBackgroundSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const bgImages = [
+    'assets/acml2025_1.webp',
+    'assets/acml2025_2.webp',
+    'assets/acml2025_3.webp',
+    'assets/acml2025_4.webp',
+    'assets/acml2025_5.webp',
+    'assets/acml2025_6.webp',
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % bgImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      {/* 讓相片從標題下方開始顯示，保留上方空白背景 */}
+      <div className="absolute top-[250px] inset-x-0 bottom-0 flex items-start justify-center">
+        {bgImages.map((src, index) => (
+          <motion.img
+            key={src}
+            src={getImageUrl(src)}
+            initial={false}
+            animate={{ 
+              opacity: index === currentIndex ? 0.7 : 0
+            }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-contain object-top"
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Conferences = ({ t, lang }) => {
   const upcomingEvents = t.conferences.events.filter(e => e.isUpcoming);
   const pastEvents = t.conferences.events.filter(e => !e.isUpcoming);
 
   return (
-    <section id="conferences" className="pt-32 pb-20 bg-slate-50/30 min-h-screen">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id="conferences" className="pt-32 pb-20 relative min-h-screen overflow-hidden">
+      <ConferenceBackgroundSlider />
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.conferences.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.conferences.title}</h2>
