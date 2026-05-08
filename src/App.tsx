@@ -905,7 +905,7 @@ const ActivityNewsPreview = ({ t, lang }) => {
                         </div>
                         <div className="md:col-span-9">
                           <div className="text-slate-900 font-bold group-hover:text-blue-600 flex items-start gap-2 transition-colors text-sm md:text-lg mb-2">
-                            <span className="line-clamp-1">{item.title}</span>
+                            <span className="">{item.title}</span>
                             <ArrowRight size={18} className="shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all mt-1 md:mt-0" />
                           </div>
                           <div className="text-slate-500 text-xs md:text-sm font-medium italic">
