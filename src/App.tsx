@@ -391,12 +391,12 @@ const translations = {
       title: 'Latest Updates',
       items: [
         {
-          date: 'YYYY/MM/DD',
-          time: 'HH:MM - HH:MM',
-          location: 'Please enter location',
-          title: '[Activity Type] Please enter title',
-          desc: 'Please enter description',
-          link: '#'
+          date: '2026/05/25',
+          time: '12:30 - 13:30',
+          location: 'AI Lecture Hall, 11F Management Building, Chang Gung University',
+          title: '[Academic Talk] Macrophages, Chronic Diseases and Aging',
+          desc: 'Speaker: Prof. Jianzhu Chen, Professor of Biology, MIT',
+          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
         },
         {
           date: '2026/05/05',
@@ -410,7 +410,7 @@ const translations = {
           date: '2026/05/12',
           time: '15:00 - 17:00',
           location: 'AI Lecture Hall, 11F Management Building, Chang Gung University',
-          title: "【學術演講】Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
+          title: "[Academic Talk] Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
           desc: 'Speakers: Prof. Michael Lewis (University of Pittsburgh) / Prof. Katia Sycara (Carnegie Mellon University)',
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144'
         },
@@ -418,7 +418,7 @@ const translations = {
           date: '2026/05/15',
           time: '12:10 - 13:30',
           location: 'Future Classroom, 9F Management Building, Chang Gung University',
-          title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
+          title: '[Academic Talk] ZotDance - an AI-powered open platform for Dancer Training and Beyond',
           desc: 'Speaker: Assoc. Prof. Quoc-Viet Dang, Department of Electrical Engineering and Computer Science, UC Irvine',
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/77265?nodeId=7144'
         }
