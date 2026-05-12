@@ -766,30 +766,44 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
 
 const Hero = ({ t, lang }) => {
   return (
-    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
-      {/* Background Accents */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-50 rounded-full blur-3xl opacity-60" />
-        <div className="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-indigo-50 rounded-full blur-3xl opacity-60" />
+    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden min-h-[80vh] flex flex-col justify-center">
+      {/* Background Image - 請將主視覺圖片命名為 main-visual.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="absolute inset-0 w-full h-full -z-20">
+        <img 
+          src={getImageUrl("/assets/main-visual.webp")} 
+          alt="Main Visual Background" 
+          className="w-full h-full object-contain object-center"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            // Placeholder fallback if image is not found
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/hero-fallback/1920/1080";
+          }}
+        />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      {/* Background Accents (Keep for subtle color pop) */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 mix-blend-multiply pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-100 rounded-full blur-3xl opacity-40" />
+        <div className="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-indigo-100 rounded-full blur-3xl opacity-40" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block py-2 px-6 rounded-full bg-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest uppercase mb-4">
+          <span className="inline-block py-2 px-6 rounded-full bg-white/90 shadow-sm border border-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest uppercase mb-4 backdrop-blur-md">
             {t.hero.badge}
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-8 leading-tight">
-            <span className="block mb-6">{t.hero.title}</span>
-            <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 py-4 px-2 leading-relaxed decoration-clone">
+          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-8 [text-shadow:_2px_2px_0_#fff,_-2px_-2px_0_#fff,_2px_-2px_0_#fff,_-2px_2px_0_#fff,_0_2px_0_#fff,_2px_0_0_#fff,_0_-2px_0_#fff,_-2px_0_0_#fff,_0_8px_16px_rgba(0,0,0,0.1)]">
+            <span className="block mb-4">{t.hero.title}</span>
+            <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-blue-800 leading-relaxed">
               {t.hero.subtitle}
             </span>
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-900 font-bold leading-relaxed bg-white/60 p-4 rounded-2xl backdrop-blur-sm border border-white/60 shadow-sm">
             {t.hero.desc}
           </p>
         </motion.div>
