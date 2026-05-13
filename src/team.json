@@ -7,8 +7,8 @@
     "img": "/assets/林桂傑.webp",
     "website": "https://faculty.sites.uci.edu/klin/",
     "email": "klin@cgu.edu.tw",
-    "expertise": ["電腦視覺", "物聯網", "服務導向運算", "即時系統", "分散式系統"],
-    "expertiseEn": ["Computer Vision", "Internet of Things", "Service-Oriented Computing", "Real-time Systems", "Distributed Systems"]
+    "expertise": ["智慧醫療", "電腦視覺", "物聯網"],
+    "expertiseEn": [ "Smart Healthcare","Computer Vision", "Internet of Things", "Service-Oriented Computing", "Real-time Systems", "Distributed Systems"]
   },
   {
     "name": "王祐中",
@@ -18,14 +18,14 @@
     "img": "/assets/王祐中.webp",
     "website": "https://www.cgu.edu.tw/ai/FullTimeProfessorManagement/Detail/d333ffe8-af47-4b45-b698-ed47dd851167?nodeId=17057",
     "email": "lihua@example.com",
-    "expertise": ["嵌入式系統", "機器學習"],
-    "expertiseEn": ["Embedded Systems", "Machine Learning"]
+    "expertise": ["智慧醫療","嵌入式系統", "機器學習"],
+    "expertiseEn": ["Smart Healthcare", "Embedded Systems", "Machine Learning"]
   },
   {
     "name": "張英風",
     "nameEn": "Ying-Feng Chang",
-    "title": "團隊成員",
-    "titleEn": "Researcher",
+    "title": "研究員",
+    "titleEn": "Research Fellow",
     "img": "/assets/張英風.webp",
     "website": "https://www.cgu.edu.tw/aic/ContentSection?nodeId=13252",
     "email": "yfchang@mail.cgu.edu.tw",
@@ -35,8 +35,8 @@
   {
     "name": "周福強",
     "nameEn": "Fu-Chiang Chou",
-    "title": "團隊成員",
-    "titleEn": "Researcher",
+    "title": "研究員",
+    "titleEn": "Research Fellow",
     "img": "/assets/周福強.webp",
     "website": "https://scholar.google.com/citations?user=Z8MFDzIAAAAJ&hl=zh-TW",
     "email": "fcc@cgu.edu.tw",
@@ -46,8 +46,8 @@
   {
     "name": "闕壯華",
     "nameEn": "Chuang-Hua Chueh",
-    "title": "團隊成員",
-    "titleEn": "Researcher",
+    "title": "研究員",
+    "titleEn": "Research Fellow",
     "img": "/assets/闕壯華.webp",
     "website": "https://chchueh-tw.github.io/index/",
     "email": "chchueh@cgu.edu.tw",
@@ -57,7 +57,7 @@
   {
     "name": "林英嘉",
     "nameEn": "Ying-Jia Lin",
-    "title": "團隊成員",
+    "title": "助理教授",
     "titleEn": "Assistant Professor",
     "img": "/assets/林英嘉.webp",
     "website": "https://yingjialin.org/about/",
@@ -68,7 +68,7 @@
   {
     "name": "陳冠宇",
     "nameEn": "Alfred Chen",
-    "title": "團隊成員",
+    "title": "研究工程師",
     "titleEn": "Research Engineer",
     "img": "/assets/陳冠宇.webp",
     "website": "https://www.cgu.edu.tw/Uploads/upload/6846e7ce-2af5-483e-a012-dae6585ef5ab.png",
@@ -79,7 +79,7 @@
   {
     "name": "高嘉隆",
     "nameEn": "Chia-Lung Kao",
-    "title": "團隊成員",
+    "title": "研究工程師",
     "titleEn": "Research Engineer",
     "img": "/assets/高嘉隆.webp",
     "website": "https://cguaickao.github.io/my-personal-site/",
@@ -90,7 +90,7 @@
   {
     "name": "劉建良",
     "nameEn": "Chien-Liang Liu",
-    "title": "團隊成員",
+    "title": "研究工程師",
     "titleEn": "Research Engineer",
     "img": "/assets/劉建良.webp",
     "website": "https://nail1021734.github.io/",
@@ -101,7 +101,7 @@
   {
     "name": "王柏鈞",
     "nameEn": "Bo-Jyun Wang",
-    "title": "團隊成員",
+    "title": "研究工程師",
     "titleEn": "Research Engineer",
     "img": "/assets/王柏鈞.webp",
     "website": "https://bojyunwang.me/",
@@ -112,7 +112,7 @@
   {
     "name": "袁聖博",
     "nameEn": "Daniel Yuan",
-    "title": "團隊成員",
+    "title": "研究工程師",
     "titleEn": "Research Engineer",
     "img": "/assets/袁聖博.webp",
     "website": "https://winterbelieve.github.io/",
