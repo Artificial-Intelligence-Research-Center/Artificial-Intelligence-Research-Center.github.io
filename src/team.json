@@ -123,12 +123,12 @@
   {
     "name": "蘇家晴",
     "nameEn": "Jia-Ching Su",
-    "title": "團隊成員",
+    "title": "計畫秘書",
     "titleEn": "Project Secretary",
     "img": "/assets/蘇家晴.webp",
     "website": "https://csps90536-prog.github.io/betty_su/",
     "email": "bettysu@cgu.edu.tw",
-    "expertise": ["計畫秘書"],
-    "expertiseEn": ["Project Secretary"]
+    "expertise": ["計畫網站管理", "行政事務"],
+    "expertiseEn": ["Project Website Management", "Administrative Affairs"]
   }
 ]
