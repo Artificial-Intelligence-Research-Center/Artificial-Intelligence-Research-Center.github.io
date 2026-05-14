@@ -79,17 +79,17 @@
     "url": "https://www.cgu.edu.tw/aic/Subject?nodeId=12884",
     "jobs": [
       {
-        "date": "2026/01/20",
+        "date": "2026/05/10",
         "title": "Recruitment: Full-time Research Assistant (1 position)",
         "url": "https://www.cgu.edu.tw/aic/Subject/Detail/77350?nodeId=12884"
       },
       {
-        "date": "2025/02/03",
+        "date": "2026/04/15",
         "title": "Recruitment: Research Fellow/Associate Research Fellow/Assistant Research Fellow (2 positions)",
         "url": "https://www.cgu.edu.tw/aic/Subject/Detail/43283?nodeId=12884"
       },
       {
-        "date": "2025/06/01",
+        "date": "2026/05/01",
         "title": "Recruitment: Postdoctoral Project Assistant",
         "url": "https://www.cgu.edu.tw/aic/Subject/Detail/43284?nodeId=12884"
       }
@@ -100,7 +100,7 @@
     "title": "Latest Updates",
     "items": [
       {
-        "date": "2026/05/25",
+        "date": "2026/05/28",
         "time": "12:30 - 13:30",
         "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
         "title": "[Academic Talk] Macrophages, Chronic Diseases and Aging",
@@ -108,7 +108,7 @@
         "link": "https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993"
       },
       {
-        "date": "2026/05/05",
+        "date": "2026/05/18",
         "time": " 14:00 - 16:00",
         "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
         "title": "[Academic Talk] Digital Transformation: Revolutionizing Clinical Trials with Big Data and AI",
@@ -116,7 +116,7 @@
         "link": "https://www.cgu.edu.tw/aic/Subject/Detail/76975?nodeId=7144"
       },
       {
-        "date": "2026/05/12",
+        "date": "2026/05/18",
         "time": "15:00 - 17:00",
         "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
         "title": "[Academic Talk] Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
@@ -124,7 +124,7 @@
         "link": "https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144"
       },
       {
-        "date": "2026/05/15",
+        "date": "2026/05/20",
         "time": "12:10 - 13:30",
         "location": "Future Classroom, 9F Management Building, Chang Gung University",
         "title": "[Academic Talk] ZotDance - an AI-powered open platform for Dancer Training and Beyond",
@@ -139,7 +139,7 @@
     "desc": "Exploring the latest research results and technical trends in the field of global medical AI.",
     "items": [
       {
-        "date": "2025/01/10",
+        "date": "2026/05/08",
         "title": "2025 Medical AI Trends: From Assisted Diagnosis to Precision Medicine",
         "author": "Sci-Tech Vista Editorial Department",
         "source": "Sci-Tech Vista",
@@ -147,7 +147,7 @@
         "url": "https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=2025-medical-ai-trends"
       },
       {
-        "date": "2024/09/12",
+        "date": "2026/04/22",
         "title": "AI Pathology Diagnosis: A Revolutionary Breakthrough from Technology to Clinic",
         "author": "Narrated by Chao-Yuan Yeh, Founder & CEO of aetherAI; Edited by Wan-Jing Lai",
         "source": "ITRI College",
@@ -155,7 +155,7 @@
         "url": "https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f"
       },
       {
-        "date": "2024/03/15",
+        "date": "2026/03/15",
         "title": "New Trends in Smart Medical Devices with AI Applications",
         "author": "Written by Chien-Yi Lo",
         "source": "Industrial Technology & Information Monthly",
@@ -163,7 +163,7 @@
         "url": "https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1253016311517010576"
       },
       {
-        "date": "2024/01/19",
+        "date": "2026/02/10",
         "title": "How Generative AI Improves Healthcare Efficiency and Quality?",
         "author": "Yi-Ting Huang, Sci-Tech Vista Special Editor",
         "source": "Sci-Tech Vista",
@@ -171,7 +171,7 @@
         "url": "https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5"
       },
       {
-        "date": "2023/08/04",
+        "date": "2026/01/05",
         "title": "AI Helps Breast Cancer Screening, Halving Doctors' Workload",
         "author": "Hannah",
         "source": "AI Post",
@@ -188,7 +188,7 @@
     "officialSite": "Go to Official Conference Website",
     "events": [
       {
-        "date": "2026/12/11",
+        "date": "2026/06/20",
         "title": "2026 Medical AI Forum",
         "subtitle": "2026 Medical AI Forum",
         "loc": "Taoyuan",
@@ -197,11 +197,11 @@
         "isUpcoming": true
       },
       {
-        "date": "2025/12/9-2025/12/12",
-        "title": "2025 ACML",
-        "subtitle": "The 17th Asian Conference on Machine Learning",
+        "date": "2026/06/09-2026/06/12",
+        "title": "2026 ACML",
+        "subtitle": "The 18th Asian Conference on Machine Learning",
         "loc": "HNBK International Convention Center, Taipei",
-        "desc": "The 17th Asian Conference on Machine Learning (ACML 2025) aims to provide an international forum for researchers to discuss the latest advances in machine learning.",
+        "desc": "The 18th Asian Conference on Machine Learning (ACML 2026) aims to provide an international forum for researchers to discuss the latest advances in machine learning.",
         "url": "https://sites.google.com/view/acml-2025-medical-ai-forum/home",
         "img": "assets/ACML2025.webp",
         "isUpcoming": false,
@@ -264,7 +264,7 @@
     "address": "Address: 11F, Management Building, Chang Gung University,\n         AI Research Center",
     "phone": "Phone: 886-3-2118800 ext 3003#53",
     "email": "Email: bettysu@cgu.edu.tw",
-    "updated": "Last Updated: 2026-04-10",
+    "updated": "Last Updated: 2026-05-14",
     "externalWarning": "Clicking the link will take you to an external website"
   }
 }

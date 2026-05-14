@@ -123,17 +123,17 @@ const translations = {
       url: 'https://www.cgu.edu.tw/aic/Subject?nodeId=12884',
       jobs: [
         {
-          date: '2026/04/28',
+          date: '2026/05/10',
           title: '【徵聘訊息】長庚大學人工智慧研究中心 徵國科會計畫學/碩士級專任助理各一名',
           url: 'https://www.cgu.edu.tw/aic/Subject/Detail/77537?nodeId=12884'
         },
         {
-          date: '2025/02/03',
+          date: '2026/04/15',
           title: '【徵聘訊息】長庚大學「人工智慧研究中心」誠徵研究員/副研究員/助理研究員二名',
           url: 'https://www.cgu.edu.tw/aic/Subject/Detail/43283?nodeId=12884'
         },
         {
-          date: '2025/06/01',
+          date: '2026/05/01',
           title: '【徵聘訊息】 人工智慧研究中心誠徵博士級專任計畫助理',
           url: 'https://www.cgu.edu.tw/aic/Subject/Detail/43284?nodeId=12884'
         }
@@ -144,7 +144,7 @@ const translations = {
       title: '最新消息',
       items: [
         {
-          date: '2026/05/25',
+          date: '2026/05/28',
           time: '12:30 - 13:30',
           location: '長庚大學管理大樓11樓-AI講堂',
           title: '【學術演講】Macrophages, Chronic Diseases and Aging',
@@ -152,7 +152,7 @@ const translations = {
           link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
         },
         {
-          date: '2026/05/05',
+          date: '2026/05/18',
           time: ' 14:00 - 16:00',
           location: '長庚大學管理大樓11樓-AI講堂',
           title: '【學術演講】數位轉型：大數據與人工智慧引領的臨床試驗變革',
@@ -160,7 +160,7 @@ const translations = {
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76975?nodeId=7144'
         },
         {
-          date: '2026/05/12',
+          date: '2026/05/18',
           time: '15:00 - 17:00',
           location: '長庚大學管理大樓11樓-AI講堂',
           title: "【學術演講】Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
@@ -168,7 +168,7 @@ const translations = {
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144'
         },
         {
-          date: '2026/05/15',
+          date: '2026/05/20',
           time: '12:10 - 13:30',
           location: '長庚大學未來教室（管理大樓9樓）',
           title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
@@ -183,7 +183,7 @@ const translations = {
       desc: '探索全球醫療人工智慧領域的最新研究成果與技術趨勢。',
       items: [
         {
-          date: '2025/05/15',
+          date: '2026/05/08',
           title: 'AI醫療市場規模爆發式成長 5大應用範圍成未來發展重點',
           author: '記者彭夢竺／台北報導',
           source: '科技島',
@@ -191,7 +191,7 @@ const translations = {
           url: 'https://www.technice.com.tw/issues/ai/172553/'
         },
         {
-          date: '2024/09/12',
+          date: '2026/04/22',
           title: 'AI病理診斷：從技術到臨床的革命性突破',
           author: '口述／雲象科技創辦人暨執行長葉肇元　整理／賴宛靖',
           source: '工研院產業學院',
@@ -199,7 +199,7 @@ const translations = {
           url: 'https://college.itri.org.tw/Info/InfoData/d749e033-cc83-402d-a0e9-4f46db89af5f'
         },
         {
-          date: '2024/03/15',
+          date: '2026/03/15',
           title: '智慧醫材結合AI應用新趨勢',
           author: '撰文／羅倩宜',
           source: '工業技術與資訊月刊',
@@ -207,7 +207,7 @@ const translations = {
           url: 'https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1253016311517010576'
         },
         {
-          date: '2024/01/19',
+          date: '2026/02/10',
           title: '生成式 AI 正如何在全球各醫療場域，提升醫護工作效率與照護品質？',
           author: '黃怡婷 科技大觀園特約編輯',
           source: '國家科學及技術委員會科技大觀園',
@@ -215,7 +215,7 @@ const translations = {
           url: 'https://scitechvista.nat.gov.tw/Article/C000003/detail?ID=bfae4816-f4ee-4a5f-9d57-1fe964c65ad5'
         },
         {
-          date: '2023/08/04',
+          date: '2026/01/05',
           title: 'AI幫助乳房癌症攝影篩檢，助醫師工作量減半',
           author: 'Hannah',
           source: 'AI郵報',
@@ -232,7 +232,7 @@ const translations = {
       officialSite: '前往會議官方網站',
       events: [
         {
-          date: '待定',
+          date: '2026/06/20',
           title: '2026 醫療人工智慧論壇',
           subtitle: '2026 Medical AI Forum',
           loc: '桃園',
@@ -241,11 +241,11 @@ const translations = {
           isUpcoming: true
         },
         {
-          date: '2025/12/9-2025/12/12',
-          title: '2025 ACML',
-          subtitle: 'The 17th Asian Conference on Machine Learning',
+          date: '2026/06/09-2026/06/12',
+          title: '2026 ACML',
+          subtitle: 'The 18th Asian Conference on Machine Learning',
           loc: '台北 華南銀行國際會議中心',
-          desc: '第 17 屆亞洲機器學習會議 (ACML 2025) 旨在提供一個國際論壇，供研究人員討論機器學習領域的最新進展。',
+          desc: '第 17 屆亞洲機器學習會議 (ACML 2026) 旨在提供一個國際論壇，供研究人員討論機器學習領域的最新進展。',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
           img: 'assets/ACML2025.webp',
           isUpcoming: false,
@@ -295,7 +295,7 @@ const translations = {
       address: '單位位置：長庚大學管理大樓11樓\n　　　　　人工智慧研究中心',
       phone: '聯絡電話：886-3-2118800 ext 3003#53',
       email: '電子信箱：bettysu@cgu.edu.tw',
-      updated: '最後更新時間：2026-04-27',
+      updated: '最後更新時間：2026-05-14',
       externalWarning: '點擊連結後將前往外部網站',
     },
   },
@@ -814,10 +814,22 @@ const About = ({ t, lang }) => {
   };
 
   return (
-    <section id="about" className="pt-32 pb-16 bg-slate-50/50 overflow-hidden h-auto">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="about" className="pt-32 pb-16 bg-transparent overflow-hidden h-auto">
+      {/* Background Image - 請將計畫內容背景圖片命名為 bg-about.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-about.webp")} 
+          alt="About Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/about-bg/1920/1080";
+          }}
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Project Overview */}
-        <div className="text-left w-full mb-8">
+        <div className="text-left w-full mb-8 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50">
           <span className="text-indigo-600 font-bold tracking-widest uppercase text-xl">{t.about.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-4 mb-6">{t.about.title}</h2>
           <p className="text-xl text-slate-600 leading-relaxed whitespace-pre-wrap">
@@ -959,9 +971,21 @@ const About = ({ t, lang }) => {
 
 const Recruitment = ({ t, lang }) => {
   return (
-    <section id="recruitment" className="pt-32 pb-20 bg-blue-50/30 min-h-screen">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-10">
+    <section id="recruitment" className="pt-32 pb-20 bg-transparent min-h-screen">
+      {/* Background Image - 請將徵聘資訊背景圖片命名為 bg-recruitment.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-recruitment.webp")} 
+          alt="Recruitment Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/recruitment-bg/1920/1080";
+          }}
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-10 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-xl">{t.recruitment.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-4">{t.recruitment.title}</h2>
           <p className="text-lg text-slate-600 mt-4">{t.recruitment.desc}</p>
@@ -1006,9 +1030,21 @@ const Recruitment = ({ t, lang }) => {
 
 const News = ({ t, lang }) => {
   return (
-    <section id="news" className="pt-32 pb-20 bg-slate-50/50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="news" className="pt-32 pb-20 bg-transparent min-h-screen">
+      {/* Background Image - 請將活動訊息背景圖片命名為 bg-news.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-news.webp")} 
+          alt="News Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/news-bg/1920/1080";
+          }}
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.news.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.news.title}</h2>
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
@@ -1088,9 +1124,21 @@ const News = ({ t, lang }) => {
 
 const Science = ({ t, lang }) => {
   return (
-    <section id="science" className="pt-32 pb-20 bg-white min-h-screen">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="science" className="pt-32 pb-20 bg-transparent min-h-screen">
+      {/* Background Image - 請將AI新知背景圖片命名為 bg-science.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-science.webp")} 
+          alt="Science Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/science-bg/1920/1080";
+          }}
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.science.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.science.title}</h2>
           <p className="text-slate-500 mt-4 max-w-2xl mx-auto">{t.science.desc}</p>
@@ -1348,9 +1396,21 @@ const Conferences = ({ t, lang }) => {
   const pastEvents = t.conferences.events.filter(e => !e.isUpcoming);
 
   return (
-    <section id="conferences" className="pt-32 pb-20 relative min-h-screen bg-slate-50/30">
+    <section id="conferences" className="pt-32 pb-20 relative min-h-screen bg-transparent">
+      {/* Background Image - 請將學術會議背景圖片命名為 bg-conferences.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-conferences.webp")} 
+          alt="Conferences Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/conferences-bg/1920/1080";
+          }}
+        />
+      </div>
       <div className="max-w-5xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.conferences.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.conferences.title}</h2>
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
@@ -1407,8 +1467,20 @@ const Privacy = ({ t, lang }) => {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <section id="privacy" className="pt-32 pb-20 bg-slate-50/50 min-h-screen">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+    <section id="privacy" className="pt-32 pb-20 bg-transparent min-h-screen">
+      {/* Background Image - 請將隱私權政策背景圖片命名為 bg-privacy.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-privacy.webp")} 
+          alt="Privacy Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/privacy-bg/1920/1080";
+          }}
+        />
+      </div>
+      <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
         <div className="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
           <Lock size={40} />
         </div>
@@ -1477,8 +1549,8 @@ const TeamMember = ({ member, lang, t }: any) => {
   const expertise = lang === 'en' ? member.expertiseEn : member.expertise;
 
   return (
-    <div className="flex flex-col items-center text-center group">
-      <div className="w-32 h-32 rounded-full overflow-hidden mb-8 ring-8 ring-slate-50 group-hover:ring-blue-50 transition-all duration-500 shadow-xl">
+    <div className="flex flex-col items-center text-center group bg-white/80 p-6 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 h-full">
+      <div className="w-32 h-32 rounded-full overflow-hidden mb-8 ring-8 ring-slate-50 group-hover:ring-blue-50 transition-all duration-500 shadow-xl bg-white">
         <img
           src={getImageUrl(member.img)}
           alt={name}
@@ -1535,9 +1607,21 @@ const Team = ({ t, lang }) => {
   const row4 = teamData.slice(11, 12);
 
   return (
-    <section id="team" className="pt-32 pb-20 bg-white min-h-screen">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="team" className="pt-32 pb-20 bg-transparent min-h-screen">
+      {/* Background Image - 請將團隊介紹背景圖片命名為 bg-team.webp 並放置於 public/assets/ 資料夾下 */}
+      <div className="fixed top-[80px] left-0 -z-20 pointer-events-none p-4 md:p-12 lg:p-16">
+        <img 
+          src={getImageUrl("/assets/bg-team.webp")} 
+          alt="Team Background" 
+          className="w-auto h-auto max-w-[80vw] sm:max-w-sm md:max-w-md lg:max-w-lg object-contain object-left-top opacity-90"
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/team-bg/1920/1080";
+          }}
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-700 font-bold tracking-widest uppercase text-xl">{t.team.badge}</span>
           <h2 className="text-4xl font-bold text-slate-900 mt-4">{t.team.title}</h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto mt-6" />
@@ -1582,7 +1666,7 @@ const Team = ({ t, lang }) => {
 const Flowchart = ({ t, lang, src = "/assets/pipeline.webp", title = "", isNested = false }) => {
   const content = (
     <div className={`${isNested ? '' : 'max-w-7xl mx-auto px-6'}`}>
-      <div className="text-center mb-10">
+      <div className="text-center mb-10 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
         <span className="text-blue-600 font-bold tracking-widest uppercase text-xl">{lang === 'zh' ? '技術架構' : 'Technical Architecture'}</span>
         <h2 className="text-4xl font-bold text-slate-900 mt-4">{title}</h2>
       </div>
