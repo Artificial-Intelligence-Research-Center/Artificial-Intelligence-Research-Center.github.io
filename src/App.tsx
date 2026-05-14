@@ -144,14 +144,6 @@ const translations = {
       title: '最新消息',
       items: [
         {
-          date: '2026/05/25',
-          time: '12:30 - 13:30',
-          location: '長庚大學管理大樓11樓-AI講堂',
-          title: '【學術演講】Macrophages, Chronic Diseases and Aging',
-          desc: '講者：Prof. Jianzhu Chen 現任麻省理工學院生物學系教授',
-          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
-        },
-        {
           date: '2026/05/05',
           time: ' 14:00 - 16:00',
           location: '長庚大學管理大樓11樓-AI講堂',
@@ -174,6 +166,14 @@ const translations = {
           title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
           desc: '講者：加州大學爾灣分校電機工程與計算機學系 Quoc-Viet Dang 教學副教授',
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/77265?nodeId=7144'
+        },
+        {
+          date: '2026/05/25',
+          time: '12:30 - 13:30',
+          location: '長庚大學管理大樓11樓-AI講堂',
+          title: '【學術演講】Macrophages, Chronic Diseases and Aging',
+          desc: '講者：Prof. Jianzhu Chen 現任麻省理工學院生物學系教授',
+          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
         }
       ],
     },
@@ -1052,7 +1052,7 @@ const News = ({ t, lang }) => {
         
         {t.news.items.length > 0 ? (
           <div className="space-y-8 max-w-4xl mx-auto">
-            {t.news.items.map((item, i) => (
+            {[...t.news.items].sort((a, b) => b.date.localeCompare(a.date)).map((item, i) => (
               <motion.div 
                 key={i} 
                 initial={{ opacity: 0, y: 20 }}

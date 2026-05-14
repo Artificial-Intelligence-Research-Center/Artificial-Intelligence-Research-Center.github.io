@@ -100,14 +100,6 @@
     "title": "Latest Updates",
     "items": [
       {
-        "date": "2026/05/28",
-        "time": "12:30 - 13:30",
-        "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
-        "title": "[Academic Talk] Macrophages, Chronic Diseases and Aging",
-        "desc": "Speaker: Prof. Jianzhu Chen, Professor of Biology, MIT",
-        "link": "https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993"
-      },
-      {
         "date": "2026/05/18",
         "time": " 14:00 - 16:00",
         "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
@@ -130,6 +122,14 @@
         "title": "[Academic Talk] ZotDance - an AI-powered open platform for Dancer Training and Beyond",
         "desc": "Speaker: Assoc. Prof. Quoc-Viet Dang, Department of Electrical Engineering and Computer Science, UC Irvine",
         "link": "https://www.cgu.edu.tw/aic/Subject/Detail/77265?nodeId=7144"
+      },
+      {
+        "date": "2026/05/25",
+        "time": "12:30 - 13:30",
+        "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
+        "title": "[Academic Talk] Macrophages, Chronic Diseases and Aging",
+        "desc": "Speaker: Prof. Jianzhu Chen, Professor of Biology, MIT",
+        "link": "https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993"
       }
     ]
   },
