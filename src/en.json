@@ -13,7 +13,7 @@
     "badge": "2026 AICoE Reasearch Program",
     "title": "Multistage Modular Medical Models",
     "subtitle": "A Modular Foundation Model Framework for Medical Imaging",
-    "desc": "The M4 Project is dedicated to exploring the application potential of artificial intelligence in the field of smart healthcare. This project establishes a rigorous training pipeline for vision models: initially, the model extracts fundamental visual features from natural images; subsequently, it incorporates multimodal medical imaging to build a generalized understanding of anatomy and pathology. In the final stage, the model is fine-tuned for specific medical specialties under the expert guidance of clinical physicians. The objective of this system is to develop reliable clinical diagnostic support tools, steadily advancing the practical implementation of precision medicine while strictly enforcing the privacy and security of medical data.",
+    "desc": "The M4 project advances smart healthcare through an AI vision pipeline. Models learn visual features from natural images, build a foundation using multimodal medical images, and are finally fine-tuned into specialized models under physician guidance. This project develops clinical support tools to implement precision medicine while ensuring data privacy.",
     "cta1": "Learn More Details",
     "cta2": "Recruitment"
   },
