@@ -144,7 +144,7 @@ const translations = {
       title: '最新消息',
       items: [
         {
-          date: '2026/05/28',
+          date: '2026/05/25',
           time: '12:30 - 13:30',
           location: '長庚大學管理大樓11樓-AI講堂',
           title: '【學術演講】Macrophages, Chronic Diseases and Aging',
@@ -152,7 +152,7 @@ const translations = {
           link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
         },
         {
-          date: '2026/05/18',
+          date: '2026/05/05',
           time: ' 14:00 - 16:00',
           location: '長庚大學管理大樓11樓-AI講堂',
           title: '【學術演講】數位轉型：大數據與人工智慧引領的臨床試驗變革',
@@ -160,7 +160,7 @@ const translations = {
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76975?nodeId=7144'
         },
         {
-          date: '2026/05/18',
+          date: '2026/05/12',
           time: '15:00 - 17:00',
           location: '長庚大學管理大樓11樓-AI講堂',
           title: "【學術演講】Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
@@ -168,7 +168,7 @@ const translations = {
           link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144'
         },
         {
-          date: '2026/05/20',
+          date: '2026/05/15',
           time: '12:10 - 13:30',
           location: '長庚大學未來教室（管理大樓9樓）',
           title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
@@ -547,17 +547,18 @@ const Hero = ({ t, lang }) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="bg-white/85 p-8 md:p-12 rounded-3xl backdrop-blur-md border border-white shadow-2xl inline-block max-w-5xl mx-auto"
         >
-          <span className="inline-block py-2 px-6 rounded-full bg-white/90 shadow-sm border border-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest mb-4 backdrop-blur-md">
+          <span className="inline-block py-2 px-6 rounded-full bg-white shadow-sm border border-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest mb-6">
             {t.hero.badge}
           </span>
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-8 [text-shadow:_2px_2px_0_#fff,_-2px_-2px_0_#fff,_2px_-2px_0_#fff,_-2px_2px_0_#fff,_0_2px_0_#fff,_2px_0_0_#fff,_0_-2px_0_#fff,_-2px_0_0_#fff,_0_8px_16px_rgba(0,0,0,0.1)]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
             <span className="block mb-4">{t.hero.title}</span>
             <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-blue-800 leading-relaxed">
               {t.hero.subtitle}
             </span>
           </h1>
-          <p className="max-w-6xl text-lg md:text-xl text-slate-900 font-bold leading-relaxed bg-white/60 p-6 rounded-2xl backdrop-blur-sm border border-white/60 shadow-sm">
+          <p className="text-lg md:text-xl text-slate-700 font-bold leading-relaxed">
             {t.hero.desc}
           </p>
         </motion.div>
@@ -570,29 +571,28 @@ const ActivityNewsPreview = ({ t, lang }) => {
   return (
     <section className="py-20 bg-transparent">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6 bg-white/85 p-6 md:px-10 md:py-8 rounded-3xl backdrop-blur-md border border-white shadow-sm"
+        >
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-4">
-                {t.news.badge}
-              </span>
-              <h2 className="text-3xl md:text-4xl font-black text-slate-900">
-                {t.news.title}
-              </h2>
-            </motion.div>
+            <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-2 md:mb-4">
+              {t.news.badge}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900">
+              {t.news.title}
+            </h2>
           </div>
           <Link 
             to="/news" 
-            className="flex items-center gap-2 text-blue-600 font-bold hover:gap-3 transition-all"
+            className="flex items-center gap-2 bg-blue-50 text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-100 hover:gap-3 transition-all"
           >
-            {lang === 'zh' ? '更多訊息' : 'More News'} <ArrowRight size={20} />
+            {lang === 'zh' ? '更多活動' : 'More Activities'} <ArrowRight size={20} />
           </Link>
-        </div>
+        </motion.div>
 
         {t.news.items.length > 0 ? (
           <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl shadow-blue-50/50 border border-blue-100 overflow-hidden">
@@ -603,7 +603,7 @@ const ActivityNewsPreview = ({ t, lang }) => {
               </div>
               {[...t.news.items]
                 .sort((a, b) => b.date.localeCompare(a.date))
-                .slice(0, 5)
+                .slice(0, 3)
                 .map((item, i) => (
                   <motion.div
                     key={i}
