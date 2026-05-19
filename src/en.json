@@ -1,11 +1,11 @@
 {
   "nav": {
     "about": "Project Plan",
-    "Team Members": "Team Members",
-    "Open positions": "Open positions",
+    "team": "Team Members",
+    "recruitment": "Open positions",
     "news": "Activity News",
     "science": "Trending",
-    "Hosted Meetings": "Hosted Meetings",
+    "conferences": "Hosted Meetings",
     "privacy": "Privacy",
     "join": "Project Plan"
   },
