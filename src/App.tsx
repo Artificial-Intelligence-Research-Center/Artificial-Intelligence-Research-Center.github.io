@@ -1579,15 +1579,6 @@ const TeamMember = ({ member, lang, t }: any) => {
             <Globe size={20} />
           </a>
         )}
-        {member.email && (
-          <a
-            href={`mailto:${member.email}`}
-            className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all"
-            title="Email"
-          >
-            <Mail size={20} />
-          </a>
-        )}
       </div>
 
       <div className="w-full pt-2 border-t border-slate-100">
