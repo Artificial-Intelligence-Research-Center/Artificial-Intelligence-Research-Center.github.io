@@ -1853,7 +1853,14 @@ const Footer = ({ t }) => {
 // --- Main App ---
 
 export default function App() {
-  const [lang, setLang] = useState('zh');
+  const [lang, setLang] = useState(() => {
+    return localStorage.getItem('appLang') || 'zh';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('appLang', lang);
+  }, [lang]);
+
   const t = translations[lang];
 
   return (
