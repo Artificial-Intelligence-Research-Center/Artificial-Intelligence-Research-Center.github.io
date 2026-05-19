@@ -1,13 +1,13 @@
 {
   "nav": {
-    "about": "Project Detail",
-    "team": "Team",
-    "recruitment": "Recruitment",
+    "about": "Project Plan",
+    "Team Members": "Team Members",
+    "Open positions": "Open positions",
     "news": "Activity News",
-    "science": "AI News",
-    "conferences": "Conferences",
+    "science": "Trending",
+    "Hosted Meetings": "Hosted Meetings",
     "privacy": "Privacy",
-    "join": "Project Details"
+    "join": "Project Plan"
   },
   "hero": {
     "badge": "2026 AICoE Reasearch Program",
@@ -15,7 +15,7 @@
     "subtitle": "A Modular Foundation Model Framework for Medical Imaging",
     "desc": "The M4 project advances smart healthcare through an AI vision pipeline. Models learn visual features from natural images, build a foundation using multimodal medical images, and are finally fine-tuned into specialized models under physician guidance. This project develops clinical support tools to implement precision medicine while ensuring data privacy.",
     "cta1": "Learn More Details",
-    "cta2": "Recruitment"
+    "cta2": "Open positions"
   },
   "infographic": {
     "badge": "Highlights",
@@ -38,7 +38,7 @@
     ]
   },
   "about": {
-    "badge": "Project Detail",
+    "badge": "Project Plan",
     "title": "Project Overview | M4 Modular Medical Foundation Models",
     "desc": "This project centers on \"Beyond Scaling Law, with Data Efficiency and Trustworthiness at the Core,\" aiming to build a Modular Medical Foundation Model (M4) framework for medical imaging to address key challenges like data scarcity, high labeling costs, and privacy constraints in real clinical settings.\n\nTraditional AI development relies on massive data and model scaling, which is often impractical in medicine. This project adopts a \"Strategy over Scale\" mindset, combining Self-Supervised Learning, Multi-stage Transfer Learning, and Task-specific Fine-Tuning to enable AI to progressively learn and establish clinically valuable medical semantic understanding with minimal expert-labeled data.",
     "sections": [
@@ -72,25 +72,25 @@
     "externalLink": "View Detailed Project Description"
   },
   "recruitment": {
-    "badge": "Recruitment",
+    "badge": "Open positions",
     "title": "Join Our Team",
-    "desc": "Please click the link below to check the latest recruitment information.",
-    "linkText": "View More Recruitment Info",
+    "desc": "Please click the link below to check the latest Open positions information.",
+    "linkText": "View More Open positions Info",
     "url": "https://www.cgu.edu.tw/aic/Subject?nodeId=12884",
     "jobs": [
       {
         "date": "2026/05/10",
-        "title": "Recruitment: Full-time Research Assistant (1 position)",
+        "title": "Open positions: Full-time Research Assistant (1 position)",
         "url": "https://www.cgu.edu.tw/aic/Subject/Detail/77350?nodeId=12884"
       },
       {
         "date": "2026/04/15",
-        "title": "Recruitment: Research Fellow/Associate Research Fellow/Assistant Research Fellow (2 positions)",
+        "title": "Open positions: Research Fellow/Associate Research Fellow/Assistant Research Fellow (2 positions)",
         "url": "https://www.cgu.edu.tw/aic/Subject/Detail/43283?nodeId=12884"
       },
       {
         "date": "2026/05/01",
-        "title": "Recruitment: Postdoctoral Project Assistant",
+        "title": "Open positions: Postdoctoral Project Assistant",
         "url": "https://www.cgu.edu.tw/aic/Subject/Detail/43284?nodeId=12884"
       }
     ]
@@ -134,7 +134,7 @@
     ]
   },
   "science": {
-    "badge": "AI News",
+    "badge": "Trending",
     "title": "Research, Implementation, and Future of AI in Healthcare",
     "desc": "Exploring the latest research results and technical trends in the field of global medical AI.",
     "items": [
@@ -180,8 +180,8 @@
       }
     ]
   },
-  "conferences": {
-    "badge": "Conferences",
+  "Hosted Meetings": {
+    "badge": "Hosted Meetings",
     "title": "Academic Events & Highlights",
     "upcoming": "Upcoming",
     "past": "Past Events",
@@ -239,8 +239,8 @@
     ]
   },
   "team": {
-    "badge": "Team",
-    "title": "Core Execution Team",
+    "badge": "Team Members",
+    "title": "Core Research Team",
     "roles": {
       "lead": "Project Lead",
       "tech": "Tech Director",
@@ -252,7 +252,7 @@
     "title": "Related Organizations"
   },
   "brand": {
-    "name": "Intelligent Medical Image"
+    "name": "M4 intelligent medical imaging"
   },
   "footer": {
     "quickLinks": "Quick Links",
