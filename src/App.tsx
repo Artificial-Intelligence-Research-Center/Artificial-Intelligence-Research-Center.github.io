@@ -551,8 +551,8 @@ const Hero = ({ t, lang }) => {
           <span className="inline-block py-2 px-6 rounded-full bg-white shadow-sm border border-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest mb-6">
             {t.hero.badge}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6 uppercase">
-            <span className="block mb-4">{t.hero.title}</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+            <span className="block mb-4 uppercase">{t.hero.title}</span>
             <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-blue-800 leading-relaxed">
               {t.hero.subtitle}
             </span>
