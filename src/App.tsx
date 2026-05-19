@@ -74,7 +74,7 @@ const translations = {
       badge: '核心技術',
       title: '技術亮點',
       desc: '透過 M4 MEDCLAW 平台，我們希望打破醫療 AI 開發的高牆，讓各級醫院都能自主打造精準的醫療大模型。',
-      image: 'assets/打破醫療 AI開發高牆.webp',
+      image: '/assets/打破醫療 AI開發高牆.webp',
       cards: [
         { title: '技術亮點', desc: '強大的病灶特徵提取能力與無需專家即可適配的自動化微調技術。' },
         { title: 'M4 MEDCLAW', desc: 'Agent 輔助之醫院自主醫療影像基礎模型微調平台。' },
@@ -237,7 +237,7 @@ const translations = {
           subtitle: '2026 Medical AI Forum',
           loc: '桃園',
           desc: '本論壇將探討人工智慧在醫療領域的最新應用與未來趨勢，匯聚醫療與科技界的專家共同交流。（網頁正在建構中）',
-          img: 'assets/acml2025_2.webp',
+          img: '/assets/acml2025_2.webp',
           isUpcoming: true
         },
         {
@@ -247,15 +247,15 @@ const translations = {
           loc: '台北 華南銀行國際會議中心',
           desc: '第 17 屆亞洲機器學習會議 (ACML 2026) 旨在提供一個國際論壇，供研究人員討論機器學習領域的最新進展。',
           url: 'https://sites.google.com/view/acml-2025-medical-ai-forum/home',
-          img: 'assets/ACML2025.webp',
+          img: '/assets/ACML2025.webp',
           isUpcoming: false,
           gallery: [
-            'assets/acml2025_1.webp', // 請替換為您的圖片檔名 1
-            'assets/acml2025_2.webp', // 請替換為您的圖片檔名 2
-            'assets/acml2025_3.webp', // 請替換為您的圖片檔名 3
-            'assets/acml2025_4.webp', // 請替換為您的圖片檔名 4
-            'assets/acml2025_5.webp', // 請替換為您的圖片檔名 5
-            'assets/acml2025_6.webp'  // 請替換為您的圖片檔名 6
+            '/assets/acml2025_1.webp', // 請替換為您的圖片檔名 1
+            '/assets/acml2025_2.webp', // 請替換為您的圖片檔名 2
+            '/assets/acml2025_3.webp', // 請替換為您的圖片檔名 3
+            '/assets/acml2025_4.webp', // 請替換為您的圖片檔名 4
+            '/assets/acml2025_5.webp', // 請替換為您的圖片檔名 5
+            '/assets/acml2025_6.webp'  // 請替換為您的圖片檔名 6
           ]
         },
       ],
@@ -1351,12 +1351,12 @@ const ConferenceItem = ({ event, t, lang }: { event: any, t: any, lang: any, key
 
 const ConferenceMarquee = () => {
   const bgImages = [
-    'assets/acml2025_1.webp',
-    'assets/acml2025_2.webp',
-    'assets/acml2025_3.webp',
-    'assets/acml2025_4.webp',
-    'assets/acml2025_5.webp',
-    'assets/acml2025_6.webp',
+    '/assets/acml2025_1.webp',
+    '/assets/acml2025_2.webp',
+    '/assets/acml2025_3.webp',
+    '/assets/acml2025_4.webp',
+    '/assets/acml2025_5.webp',
+    '/assets/acml2025_6.webp',
   ];
 
   const marqueeImages = [...bgImages, ...bgImages];
