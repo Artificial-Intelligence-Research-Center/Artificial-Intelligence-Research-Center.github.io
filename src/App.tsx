@@ -546,7 +546,7 @@ const Hero = ({ t, lang }) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white/85 p-8 md:p-12 rounded-3xl backdrop-blur-md border border-white shadow-2xl inline-block max-w-5xl mx-auto"
+          className="bg-white/85 p-8 md:p-12 rounded-3xl backdrop-blur-md border border-white shadow-2xl w-full"
         >
           <span className="inline-block py-2 px-6 rounded-full bg-white shadow-sm border border-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest mb-6">
             {t.hero.badge}
