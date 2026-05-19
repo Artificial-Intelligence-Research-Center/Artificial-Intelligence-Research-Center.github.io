@@ -329,7 +329,7 @@ const NavDropdown = ({ link, location, t }: { link: any, location: any, t: any, 
     >
       <Link
         to={link.href}
-        className={`text-sm font-medium transition-colors flex items-center gap-1 py-2 ${location.pathname === link.href ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'
+        className={`uppercase text-sm font-medium transition-colors flex items-center gap-1 py-2 ${location.pathname === link.href ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'
           }`}
       >
         {link.name}
@@ -352,7 +352,7 @@ const NavDropdown = ({ link, location, t }: { link: any, location: any, t: any, 
                 <Link
                   key={idx}
                   to={sub.href}
-                  className="block px-5 py-2.5 text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-colors border-l-4 border-transparent hover:border-blue-600 font-medium"
+                  className="uppercase block px-5 py-2.5 text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-colors border-l-4 border-transparent hover:border-blue-600 font-medium"
                 >
                   {sub.name}
                 </Link>
@@ -409,7 +409,7 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
             className="h-10 w-auto transition-transform group-hover:scale-105"
             referrerPolicy="no-referrer"
           />
-          <span className={`text-xl font-bold tracking-tight text-slate-900`}>
+          <span className={`uppercase text-xl font-bold tracking-tight text-slate-900`}>
             {t.brand.name}
           </span>
         </Link>
@@ -423,7 +423,7 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium transition-colors text-slate-600 hover:text-blue-600"
+                className="uppercase text-sm font-medium transition-colors text-slate-600 hover:text-blue-600"
                 title={t.footer.externalWarning}
               >
                 {link.name}
@@ -474,7 +474,7 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-base font-bold text-slate-900 flex items-center justify-between"
+                      className="uppercase text-base font-bold text-slate-900 flex items-center justify-between"
                       onClick={() => setIsOpen(false)}
                       title={t.footer.externalWarning}
                     >
@@ -485,7 +485,7 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
                     <>
                       <Link
                         to={link.href}
-                        className={`text-base font-bold flex items-center justify-between ${location.pathname === link.href ? 'text-blue-600' : 'text-slate-900'}`}
+                        className={`uppercase text-base font-bold flex items-center justify-between ${location.pathname === link.href ? 'text-blue-600' : 'text-slate-900'}`}
                         onClick={() => setIsOpen(false)}
                       >
                         {link.name}
@@ -497,7 +497,7 @@ const Navbar = ({ lang, setLang, t }: { lang: string, setLang: any, t: any }) =>
                             <Link
                               key={idx}
                               to={sub.href}
-                              className="text-sm font-medium text-slate-500 hover:text-blue-600 py-1"
+                              className="uppercase text-sm font-medium text-slate-500 hover:text-blue-600 py-1"
                               onClick={() => setIsOpen(false)}
                             >
                               {sub.name}
@@ -551,7 +551,7 @@ const Hero = ({ t, lang }) => {
           <span className="inline-block py-2 px-6 rounded-full bg-white shadow-sm border border-indigo-50 text-indigo-600 text-base md:text-xl font-bold tracking-widest mb-6">
             {t.hero.badge}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6 uppercase">
             <span className="block mb-4">{t.hero.title}</span>
             <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-blue-800 leading-relaxed">
               {t.hero.subtitle}
@@ -581,7 +581,7 @@ const ActivityNewsPreview = ({ t, lang }) => {
             <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-2 md:mb-4">
               {t.news.badge}
             </span>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 uppercase">
               {t.news.title}
             </h2>
           </div>
@@ -747,7 +747,7 @@ const InfographicSection = ({ t, isNested = false }) => {
               <span className="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 text-sm font-bold tracking-wider uppercase mb-4">
                 {t.infographic.badge}
               </span>
-              <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6 uppercase">
                 {t.infographic.title}
               </h2>
             </>
@@ -830,7 +830,7 @@ const About = ({ t, lang }) => {
         {/* Project Overview */}
         <div className="text-left w-full mb-8 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50">
           <span className="text-indigo-600 font-bold tracking-widest uppercase text-xl">{t.about.badge}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-4 mb-6">{t.about.title}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-4 mb-6 uppercase">{t.about.title}</h2>
           <p className="text-xl text-slate-600 leading-relaxed whitespace-pre-wrap">
             {t.about.desc}
           </p>
@@ -986,7 +986,7 @@ const Recruitment = ({ t, lang }) => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-10 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-xl">{t.recruitment.badge}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-4">{t.recruitment.title}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-4 uppercase">{t.recruitment.title}</h2>
           <p className="text-lg text-slate-600 mt-4">{t.recruitment.desc}</p>
         </div>
 
@@ -1045,7 +1045,7 @@ const News = ({ t, lang }) => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.news.badge}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.news.title}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-6 uppercase">{t.news.title}</h2>
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
         </div>
         
@@ -1139,7 +1139,7 @@ const Science = ({ t, lang }) => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.science.badge}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.science.title}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-6 uppercase">{t.science.title}</h2>
           <p className="text-slate-500 mt-4 max-w-2xl mx-auto">{t.science.desc}</p>
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
         </div>
@@ -1411,7 +1411,7 @@ const Conferences = ({ t, lang }) => {
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         <div className="text-center mb-12 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-600 font-bold tracking-widest uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">{t.conferences.badge}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-6">{t.conferences.title}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-6 uppercase">{t.conferences.title}</h2>
           <div className="w-12 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
         </div>
       </div>
@@ -1484,7 +1484,7 @@ const Privacy = ({ t, lang }) => {
           <Lock size={40} />
         </div>
         <span className="text-emerald-600 font-bold tracking-widest uppercase text-xl">{t.privacy.badge}</span>
-        <h2 className="text-4xl font-bold text-slate-900 mt-4 mb-6">{t.privacy.title}</h2>
+        <h2 className="text-4xl font-bold text-slate-900 mt-4 mb-6 uppercase">{t.privacy.title}</h2>
         <p className="text-lg text-slate-600 leading-relaxed">
           {t.privacy.desc}
         </p>
@@ -1613,7 +1613,7 @@ const Team = ({ t, lang }) => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
           <span className="text-blue-700 font-bold tracking-widest uppercase text-xl">{t.team.badge}</span>
-          <h2 className="text-4xl font-bold text-slate-900 mt-4">{t.team.title}</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mt-4 uppercase">{t.team.title}</h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto mt-6" />
         </div>
 
@@ -1658,7 +1658,7 @@ const Flowchart = ({ t, lang, src = "/assets/pipeline.webp", title = "", isNeste
     <div className={`${isNested ? '' : 'max-w-7xl mx-auto px-6'}`}>
       <div className="text-center mb-10 bg-white/80 p-8 rounded-3xl backdrop-blur-sm shadow-sm border border-white/50 max-w-3xl mx-auto">
         <span className="text-blue-600 font-bold tracking-widest uppercase text-xl">{lang === 'zh' ? '技術架構' : 'Technical Architecture'}</span>
-        <h2 className="text-4xl font-bold text-slate-900 mt-4">{title}</h2>
+        <h2 className="text-4xl font-bold text-slate-900 mt-4 uppercase">{title}</h2>
       </div>
       <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-50 p-4 md:p-8">
         <img
