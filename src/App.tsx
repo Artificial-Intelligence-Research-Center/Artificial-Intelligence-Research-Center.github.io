@@ -65,7 +65,7 @@ const translations = {
     hero: {
       badge: 'AICoE主題研究計畫',
       title: '多階段模組化醫療視覺基礎模型',
-      subtitle: 'Multistage Modular Medical Models',
+      subtitle: 'Multistage Modular\nMedical Models',
       desc: 'M4 計畫透過 AI 視覺流水線推進智慧醫療。模型從自然影像學習視覺特徵，經多模態醫學影像建立基礎，最後在醫師導引下微調為專科模型。本計畫在確保數據隱私下，開發臨床輔助工具以落實精準醫療。',
       cta1: '了解更多計畫細節',
       cta2: '徵聘資訊',
@@ -552,8 +552,8 @@ const Hero = ({ t, lang }) => {
             {t.hero.badge}
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-            <span className="block mb-4 uppercase">{t.hero.title}</span>
-            <span className="inline-block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-blue-800 leading-relaxed">
+            <span className="block mb-4 uppercase whitespace-pre-line mx-auto text-center">{t.hero.title}</span>
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-3xl text-blue-800 leading-relaxed whitespace-pre-line mx-auto text-center">
               {t.hero.subtitle}
             </span>
           </h1>

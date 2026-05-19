@@ -11,7 +11,7 @@
   },
   "hero": {
     "badge": "2026 AICoE Reasearch Program",
-    "title": "Multistage Modular Medical Models",
+    "title": "Multistage Modular\nMedical Models",
     "subtitle": "A Modular Foundation Model Framework for Medical Imaging",
     "desc": "The M4 project advances smart healthcare through an AI vision pipeline. Models learn visual features from natural images, build a foundation using multimodal medical images, and are finally fine-tuned into specialized models under physician guidance. This project develops clinical support tools to implement precision medicine while ensuring data privacy.",
     "cta1": "Learn More Details",
