@@ -180,7 +180,7 @@
       }
     ]
   },
-  "Hosted Meetings": {
+  "conferences": {
     "badge": "Hosted Meetings",
     "title": "Academic Events & Highlights",
     "upcoming": "Upcoming",
