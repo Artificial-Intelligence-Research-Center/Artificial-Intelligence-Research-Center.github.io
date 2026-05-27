@@ -65,7 +65,7 @@ const translations = {
     hero: {
       badge: 'AICoE主題研究計畫',
       title: '多階段模組化醫療視覺基礎模型',
-      subtitle: 'Multistage Modular\nMedical Models',
+      subtitle: 'Multistage Modular Medical Models',
       desc: 'M4 計畫透過 AI 視覺流水線推進智慧醫療。模型從自然影像學習視覺特徵，經多模態醫學影像建立基礎，最後在醫師導引下微調為專科模型。本計畫在確保數據隱私下，開發臨床輔助工具以落實精準醫療。',
       cta1: '了解更多計畫細節',
       cta2: '徵聘資訊',
