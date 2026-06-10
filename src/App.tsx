@@ -113,7 +113,7 @@ const translations = {
         },
       ],
       exp: '年產業經驗',
-      externalLink: '查看詳細計畫說明',
+      externalLink: '查看計畫GitHub',
     },
     recruitment: {
       badge: '徵聘資訊',
