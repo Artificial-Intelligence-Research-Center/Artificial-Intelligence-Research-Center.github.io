@@ -950,7 +950,7 @@ const About = ({ t, lang }) => {
         {/* External Link */}
         <div className="mt-16 text-center">
           <a
-            href="https://www.twaicoe.org/medical-model-beyond-scaling-a-modular-foundation-model-framework-for-data-efficient-and-trustworthy-medical-imaging-cn"
+            href="https://github.com/Artificial-Intelligence-Research-Center/M4.git
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-500 text-white px-10 py-5 rounded-2xl font-bold hover:bg-amber-600 transition-all shadow-2xl shadow-amber-100 group text-lg"
