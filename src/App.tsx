@@ -254,6 +254,7 @@ const translations = {
       badge: '團隊介紹',
       title: '核心執行團隊',
       roles: { lead: '計畫主持人', tech: '技術總監', ops: '營運經理', community: '社群推廣' },
+      website: '網站'
     },
     partners: {
       title: '相關單位',
@@ -273,6 +274,28 @@ const translations = {
       updated: '最後更新時間：2026-05-14',
       externalWarning: '點擊連結後將前往外部網站',
     },
+    common: {
+      moreActivities: '更多活動',
+      date: '日期',
+      activityDetails: '活動主題與詳情',
+      goToSite: '前往外部網站',
+      jobTitle: '職缺',
+      conferenceGallery: '會議剪影',
+      conferenceHighlights: '會議亮點',
+      interdisciplinaryExpertExchange: '跨領域專家交流',
+      latestTechnologyTrendsDiscussion: '最新技術趨勢探討',
+      practicalApplicationCaseSharing: '實務應用案例分享',
+      collapseDocument: '收合文件',
+      readFullPolicyDocument: '閱讀完整政策文件',
+      contentBeingPrepared: '內容正在準備中，敬請期待。',
+      noActivityNews: '目前尚無活動訊息',
+      technicalArchitecture: '技術架構',
+      flowchart: '* 流程圖',
+      previous: '上一節',
+      next: '下一節',
+      readMore: '閱讀更多',
+      source: '轉自：'
+    }
   },
   en: enData,
 };
