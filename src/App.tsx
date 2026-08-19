@@ -144,36 +144,12 @@ const translations = {
       title: '最新消息',
       items: [
         {
-          date: '2026/05/05',
-          time: ' 14:00 - 16:00',
+          date: '2026/09/07',
+          time: ' 14:00 - 15:00',
           location: '長庚大學管理大樓11樓-AI講堂',
-          title: '【學術演講】數位轉型：大數據與人工智慧引領的臨床試驗變革',
-          desc: '講者：林士睿博士 美國Stanford 大學生物醫學資訊博士',
-          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76975?nodeId=7144'
-        },
-        {
-          date: '2026/05/12',
-          time: '15:00 - 17:00',
-          location: '長庚大學管理大樓11樓-AI講堂',
-          title: "【學術演講】Hiding a Swarm's Leader from RL Agent and Human. AI Safety in the Information and Physical Space",
-          desc: '講者：Prof. Michael Lewis 美國匹茲堡大學（University of Pittsburgh）資訊學院教授/Prof. Katia Sycara 美國卡內基美隆大學（CMU）機器人研究所資深研究教授，現任機器人研究所副主任，並擔任可信任人機協作研究中心主任。',
-          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/76978?nodeId=7144'
-        },
-        {
-          date: '2026/05/15',
-          time: '12:10 - 13:30',
-          location: '長庚大學未來教室（管理大樓9樓）',
-          title: '【學術演講】ZotDance - an AI-powered open platform for Dancer Training and Beyond',
-          desc: '講者：加州大學爾灣分校電機工程與計算機學系 Quoc-Viet Dang 教學副教授',
-          link: 'https://www.cgu.edu.tw/aic/Subject/Detail/77265?nodeId=7144'
-        },
-        {
-          date: '2026/05/25',
-          time: '12:30 - 13:30',
-          location: '長庚大學管理大樓11樓-AI講堂',
-          title: '【學術演講】Macrophages, Chronic Diseases and Aging',
-          desc: '講者：Prof. Jianzhu Chen 現任麻省理工學院生物學系教授',
-          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/77751?nodeId=16993'
+          title: '【學術演講】AIDD 在藥物開發中的應用：工業與監管FDA視角',
+          desc: '顧曼芹博士（顧德諮詢有限公司創辦人暨總經理）',
+          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83226?nodeId=16993'
         }
       ],
     },
