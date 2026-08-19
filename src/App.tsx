@@ -144,6 +144,14 @@ const translations = {
       title: '最新消息',
       items: [
         {
+          date: '2026/09/07',
+          time: ' 14:00 - 15:00',
+          location: '長庚大學管理大樓11樓-AI講堂',
+          title: '【學術演講】AIDD 在藥物開發中的應用：工業與監管FDA視角',
+          desc: '顧曼芹博士（顧德諮詢有限公司創辦人暨總經理）',
+          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83226?nodeId=16993'
+        },
+        {
           date: '2026/05/05',
           time: ' 14:00 - 16:00',
           location: '長庚大學管理大樓11樓-AI講堂',
