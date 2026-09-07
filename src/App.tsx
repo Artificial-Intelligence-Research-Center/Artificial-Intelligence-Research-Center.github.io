@@ -149,7 +149,7 @@ const translations = {
           location: '長庚大學管理大樓11樓-AI講堂',
           title: '【學術演講】The Human Side of AI Training 人工智慧訓練中的人類行為與相互影響',
           desc: '美國聖路易斯華盛頓大學電腦科學與工程學系 何建儒副教授',
-          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83831?nodeId=169933'
+          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83831?nodeId=16993'
         },
         {
           date: '2026/09/07',
