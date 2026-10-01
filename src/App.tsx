@@ -144,6 +144,14 @@ const translations = {
       title: '最新消息',
       items: [
         {
+          date: '2026/10/29',
+          time: ' 09:30 - 11:10',
+          location: 'MRANTI, Kuala Lumpur, Malaysia',
+          title: 'The 7th International Conference on Medical Design（MD2026）-Innovating, Funding, and Scaling MedTech Startups',
+          desc: '李書行教授（Shu-Hsing Li, Ph.D.）｜長庚大學副校長',
+          link: 'https://md2026.ipdda.org/'
+        },
+        {
           date: '2026/10/06',
           time: ' 13:00 - 15:00',
           location: '長庚大學管理大樓11樓-AI講堂',
