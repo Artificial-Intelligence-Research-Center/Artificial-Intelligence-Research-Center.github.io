@@ -150,14 +150,6 @@ const translations = {
           title: '【學術演講】世界模型與世界動作模型：學習預測、規劃與行動 World Models and World-Action Models: Learning to Predict, Plan, and Act',
           desc: '國立臺灣大學資訊工程學系 李濬屹教授',
           link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83840?nodeId=16993'
-        },
-        {
-          date: '2026/09/07',
-          time: ' 14:00 - 15:00',
-          location: '長庚大學管理大樓11樓-AI講堂',
-          title: '【學術演講】AIDD 在藥物開發中的應用：工業與監管FDA視角',
-          desc: '顧曼芹博士（顧德諮詢有限公司創辦人暨總經理）',
-          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83226?nodeId=16993'
         }
       ],
     },
