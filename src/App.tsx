@@ -152,12 +152,12 @@ const translations = {
           link: 'https://md2026.ipdda.org/'
         },
         {
-          date: '2026/10/06',
+          date: '2026/10/20',
           time: ' 13:00 - 15:00',
           location: '長庚大學管理大樓11樓-AI講堂',
-          title: '【學術演講】世界模型與世界動作模型：學習預測、規劃與行動 World Models and World-Action Models: Learning to Predict, Plan, and Act',
-          desc: '國立臺灣大學資訊工程學系 李濬屹教授',
-          link: 'https://www.cgu.edu.tw/coic/Subject/Detail/83840?nodeId=16993'
+          title: '【學術演講】YOLOv4、YOLOv7及 YOLOv9的研發過程 The R&D process of YOLOv4, YOLOv7, and YOLOv9',
+          desc: '中央研究院資訊科學研究所 廖弘源所長',
+          link: 'https://teams.microsoft.com/meet/475054318483504?p=g1ikFpphkVsFki6FYg'
         }
       ],
     },
