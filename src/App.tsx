@@ -144,6 +144,14 @@ const translations = {
       title: '最新消息',
       items: [
         {
+          date: '2026/11/03',
+          time: ' 13:00 - 15:00',
+          location: '長庚大學管理大樓 11 樓 AI 講堂',
+          title: 'From Cultural Archives to Judicial Reasoning: Structuring Text and Norms across Digital Humanities and Legal Informatics',
+          desc: '國立政治大學資訊科學系劉昭麟特聘教授',
+          link: 'https://reurl.cc/QNl3rM'
+        },
+        {
           date: '2026/10/29',
           time: ' 09:30 - 11:10',
           location: 'MRANTI, Kuala Lumpur, Malaysia',
