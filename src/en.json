@@ -99,6 +99,14 @@
     "badge": "Activity News",
     "title": "Latest Updates",
     "items": [
+    {
+        "date": "2026/11/03",
+        "time": " 13:00 - 15:00",
+        "location": "AI Lecture Hall, 11F Management Building, Chang Gung University",
+        "title": "From Cultural Archives to Judicial Reasoning: Structuring Text and Norms across Digital Humanities and Legal Informatics",
+        "desc": "Speaker: Chao-Lin Liu, Ph.D (National Chengchi University, Taiwan)",
+        "link": "https://reurl.cc/QNl3rM"
+      },
       {
         "date": "2026/10/29",
         "time": " 09:30 - 11:10",
