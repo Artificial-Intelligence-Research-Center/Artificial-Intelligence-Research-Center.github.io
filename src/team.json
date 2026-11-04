@@ -77,17 +77,6 @@
     "expertiseEn": ["Firewall", "Network Engineering", "High Availability", "Data Center Operations", "DevOps"]
   },
   {
-    "name": "高嘉隆",
-    "nameEn": "Chia-Lung Kao",
-    "title": "研究工程師",
-    "titleEn": "Research Engineer",
-    "img": "/assets/高嘉隆.webp",
-    "website": "https://cguaickao.github.io/my-personal-site/",
-    "email": "clkaoc@cgu.edu.tw",
-    "expertise": ["機器學習", "自監督學習"],
-    "expertiseEn": ["Machine Learning", "Self-supervised Learning"]
-  },
-  {
     "name": "劉建良",
     "nameEn": "Chien-Liang Liu",
     "title": "研究工程師",
